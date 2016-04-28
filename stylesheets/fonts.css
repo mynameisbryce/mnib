@@ -1,0 +1,36 @@
+@font-face {
+  font-family: 'AvenirNextLTProRegular';
+  src: url("../fonts/avenirnextltpro-regular.eot");
+  src: url("../fonts/avenirnextltpro-regular.eot") format("embedded-opentype"), url("../fonts/avenirnextltpro-regular.woff") format("woff"), url("../fonts/avenirnextltpro-regular.ttf") format("truetype"), url("../fonts/avenirnextltpro-regular.svg#AvenirNextLTProRegular") format("svg");
+}
+@font-face {
+  font-family: 'MetaSerifBook';
+  src: url("../fonts/metaserif_book.eot");
+  src: url("../fonts/metaserif_book.eot") format("embedded-opentype"), url("../fonts/metaserif_book.woff") format("woff"), url("../fonts/metaserif_book.ttf") format("truetype"), url("../fonts/metaserif_book.svg#MetaSerifBookBook") format("svg");
+}
+@font-face {
+  font-family: 'GothamBold-Regular';
+  src: url("../fonts/GothamBold_latin+latin-ext_gdi.eot");
+  src: url("../fonts/GothamBold_latin+latin-ext_gdi.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamBold_latin+latin-ext_gdi.woff") format("woff"), url("../fonts/GothamBold_latin+latin-ext_gdi.ttf") format("truetype"), url("../fonts/GothamBold_latin+latin-ext_gdi.svg#GothamBold-Regular") format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-20B1;
+}
+@font-face {
+  font-family: 'Gotham-Book';
+  src: url("../fonts/gotham-book-webfont.eot");
+  src: url("../fonts/gotham-book-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/gotham-book-webfont.woff") format("woff"), url("../fonts/gotham-book-webfont.ttf") format("truetype"), url("../fonts/gotham-book-webfont.svg#Gotham-Book") format("svg");
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-20B1;
+}
+@font-face {
+  font-family: 'TungstenNarrowMedium-Regular';
+  src: url("../fonts/TungstenNarrowMedium_latin+latin-ext_gdi.eot");
+  src: url("../fonts/TungstenNarrowMedium_latin+latin-ext_gdi.eot?#iefix") format("embedded-opentype"), url("../fonts/TungstenNarrowMedium_latin+latin-ext_gdi.woff") format("woff"), url("../fonts/TungstenNarrowMedium_latin+latin-ext_gdi.ttf") format("truetype"), url("../fonts/TungstenNarrowMedium_latin+latin-ext_gdi.svg#TungstenNarrowMedium-Regular") format("svg");
+  font-weight: 350;
+  font-style: normal;
+  font-stretch: condensed;
+  unicode-range: U+0020-20AC;
+}
