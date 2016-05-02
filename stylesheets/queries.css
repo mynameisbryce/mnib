@@ -1,0 +1,586 @@
+@media only screen and (max-width: 1280px) {
+  /* line 5, ../sass/queries.scss */
+  div.page {
+    margin: 0px auto;
+  }
+}
+@media only screen and (max-width: 1800px) {
+  /* line 12, ../sass/queries.scss */
+  body.maxplay div.page {
+    max-width: auto;
+    width: 78%;
+    margin: 0;
+  }
+  /* line 18, ../sass/queries.scss */
+  body.maxplay aside {
+    width: 22%;
+  }
+  /* line 25, ../sass/queries.scss */
+  body.maxplay.maxplay section.process-tools ul li {
+    float: none;
+    display: block;
+    margin: 0 auto 0 auto;
+    width: 100%;
+    margin-bottom: 4px;
+    overflow: hidden;
+  }
+  /* line 26, ../sass/queries.scss */
+  body.maxplay.maxplay section.process-tools ul li.row-last, body.maxplay.maxplay section.process-tools ul li:last-child {
+    margin: 0 auto 4px auto;
+  }
+  /* line 38, ../sass/queries.scss */
+  body.maxplay.maxplay section.process-tools ul li h2 {
+    margin: 100px 0 0 0;
+    padding: 0;
+  }
+}
+@media only screen and (max-width: 800px) {
+  /* line 50, ../sass/queries.scss */
+  body {
+    margin-bottom: 60px;
+  }
+  /* line 53, ../sass/queries.scss */
+  body.maxplay div.page {
+    width: 100%;
+    margin: 0;
+  }
+  /* line 58, ../sass/queries.scss */
+  body.maxplay aside {
+    width: 100%;
+    height: 100%;
+    overflow-x: scroll;
+    top: auto;
+    bottom: 0px;
+    background-color: black;
+    -moz-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+    z-index: 20;
+  }
+  /* line 68, ../sass/queries.scss */
+  body.maxplay aside.open {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -moz-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    -moz-transition-property: all;
+    -o-transition-property: all;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -moz-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    -webkit-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+  }
+  /* line 75, ../sass/queries.scss */
+  body.maxplay aside button {
+    display: block;
+    position: fixed;
+    height: 60px;
+    width: 20px;
+    bottom: 0;
+    z-index: 100;
+    border: none;
+    background-color: blue;
+  }
+  /* line 85, ../sass/queries.scss */
+  body.maxplay aside button.mobile-left {
+    left: 0;
+  }
+  /* line 89, ../sass/queries.scss */
+  body.maxplay aside button.mobile-right {
+    right: 0;
+  }
+  /* line 93, ../sass/queries.scss */
+  body.maxplay aside ul {
+    padding-top: 20px;
+    display: block;
+    position: relative;
+  }
+  /* line 99, ../sass/queries.scss */
+  body.maxplay aside ul li {
+    box-shadow: none;
+    border: none;
+    text-align: center;
+    display: block;
+    padding: 15px 20px;
+    font-size: 12px;
+    border-bottom: 1px solid black;
+  }
+  /* line 108, ../sass/queries.scss */
+  body.maxplay aside ul li.active-tab {
+    box-shadow: none;
+    -moz-transition-delay: 0.3s;
+    -o-transition-delay: 0.3s;
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+    -moz-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    -moz-transition-property: all;
+    -o-transition-property: all;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -moz-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    -webkit-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+  }
+  /* line 118, ../sass/queries.scss */
+  body.maxplay button.mobile-menu {
+    width: 100%;
+    position: fixed;
+    height: 60px;
+    bottom: 0;
+    display: block;
+    left: 0;
+    background-color: blue;
+    border: none;
+    text-indent: -10000px;
+    overflow: hidden;
+    content: "";
+    background: url(../img/maxplay-study/menu-btn@2x.png) no-repeat black scroll;
+    background-size: 21px 13px;
+    background-position: center center;
+    box-shadow: none;
+    outline: none;
+    z-index: 20;
+  }
+  /* line 137, ../sass/queries.scss */
+  body.maxplay button.mobile-menu.open {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    background: url(../img/maxplay-study/close-btn@2x.png) no-repeat black scroll;
+    background-size: 16px 16px;
+    background-position: center center;
+    box-shadow: none;
+  }
+}
+@media only screen and (max-width: 1479px) {
+  /* line 159, ../sass/queries.scss */
+  section.product-design {
+    background-position: top center;
+    background-size: cover;
+  }
+
+  /* line 164, ../sass/queries.scss */
+  section.testimonial {
+    background-position: top center;
+  }
+  /* line 166, ../sass/queries.scss */
+  section.testimonial div.left, section.testimonial div.right {
+    display: block;
+    width: 100%;
+  }
+  /* line 173, ../sass/queries.scss */
+  section.testimonial div.left div.profile-card {
+    margin-left: -105px;
+  }
+  /* line 179, ../sass/queries.scss */
+  section.testimonial div.left div.notes {
+    margin-left: -200px;
+  }
+  /* line 184, ../sass/queries.scss */
+  section.testimonial div.right {
+    height: auto;
+    background-color: #282727;
+  }
+  /* line 187, ../sass/queries.scss */
+  section.testimonial div.right blockquote {
+    padding: 0px 40px 0 40px;
+    margin-top: 80px;
+  }
+  /* line 191, ../sass/queries.scss */
+  section.testimonial div.right blockquote:before {
+    top: 20px;
+  }
+  /* line 196, ../sass/queries.scss */
+  section.testimonial div.right a {
+    display: block;
+    position: relative;
+    margin: 30px auto 120px auto;
+    padding: 0;
+    top: auto;
+    left: auto;
+  }
+
+  /* line 209, ../sass/queries.scss */
+  section.cta {
+    background-position: top center;
+    background-size: cover;
+  }
+
+  /* line 220, ../sass/queries.scss */
+  body.maxplay section.banner div.left-50 {
+    display: block;
+    float: none;
+    width: 100%;
+  }
+  /* line 225, ../sass/queries.scss */
+  body.maxplay section.banner div.left-50 img {
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+  /* line 230, ../sass/queries.scss */
+  body.maxplay section.banner div.left-50 div.stats ul {
+    margin-left: 0;
+  }
+  /* line 235, ../sass/queries.scss */
+  body.maxplay section.banner h1, body.maxplay section.banner h2, body.maxplay section.banner p {
+    width: auto;
+    padding: 0 60px;
+  }
+  /* line 241, ../sass/queries.scss */
+  body.maxplay section.banner h1 {
+    padding-top: 100px;
+  }
+  /* line 244, ../sass/queries.scss */
+  body.maxplay section.banner div.right-50 {
+    display: block;
+    float: none;
+    width: 100%;
+  }
+  /* line 252, ../sass/queries.scss */
+  body.maxplay section.background {
+    height: auto;
+    padding: 80px 0;
+  }
+  /* line 255, ../sass/queries.scss */
+  body.maxplay section.background div.left-50 {
+    float: none;
+    width: auto;
+  }
+  /* line 258, ../sass/queries.scss */
+  body.maxplay section.background div.left-50 p {
+    width: auto;
+    padding: 0 80px;
+  }
+  /* line 263, ../sass/queries.scss */
+  body.maxplay section.background div.right-50 {
+    float: none;
+    width: auto;
+    height: auto;
+    padding: 40px 40px 0 40px;
+    margin: 0;
+    position: relative;
+  }
+  /* line 270, ../sass/queries.scss */
+  body.maxplay section.background div.right-50 iframe {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    top: 0;
+    right: 0;
+  }
+  /* line 281, ../sass/queries.scss */
+  body.maxplay section.reachout div.left-30 {
+    float: none;
+    width: 100%;
+  }
+  /* line 284, ../sass/queries.scss */
+  body.maxplay section.reachout div.left-30 img {
+    display: block;
+    width: 380px;
+    padding: 80px 0 0 0;
+    margin: 0 auto;
+  }
+  /* line 292, ../sass/queries.scss */
+  body.maxplay section.reachout div.right-70 {
+    width: 100%;
+  }
+  /* line 295, ../sass/queries.scss */
+  body.maxplay section.reachout div.right-70 ul li {
+    background-color: transparent;
+    width: 200px;
+    display: block;
+    float: none;
+    padding: 0;
+    margin: 0 auto 20px auto;
+  }
+  /* line 302, ../sass/queries.scss */
+  body.maxplay section.reachout div.right-70 ul li img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  /* line 310, ../sass/queries.scss */
+  body.maxplay section.reachout div.right-70 ul li h2 {
+    position: relative;
+    display: block;
+    margin-top: 20px;
+  }
+  /* line 320, ../sass/queries.scss */
+  body.maxplay section.approach img.float-right-img, body.maxplay section.approach img.float-left-img {
+    display: block;
+    float: none;
+    margin: 40px auto;
+    padding: 0;
+  }
+  /* line 327, ../sass/queries.scss */
+  body.maxplay section.approach p, body.maxplay section.approach p.guideline {
+    padding: 0 80px;
+  }
+  /* line 331, ../sass/queries.scss */
+  body.maxplay section.approach h2 {
+    padding: 0 80px;
+  }
+  /* line 339, ../sass/queries.scss */
+  body.maxplay section.process-tools ul li {
+    float: none;
+    display: block;
+    margin: 0 auto 0 auto;
+    width: 100%;
+    margin-bottom: 4px;
+    overflow: hidden;
+  }
+  /* line 340, ../sass/queries.scss */
+  body.maxplay section.process-tools ul li.row-last, body.maxplay section.process-tools ul li:last-child {
+    margin: 0 auto 4px auto;
+  }
+  /* line 352, ../sass/queries.scss */
+  body.maxplay section.process-tools ul li h2 {
+    margin: 100px 0 0 0;
+    padding: 0;
+  }
+  /* line 360, ../sass/queries.scss */
+  body.maxplay section.team {
+    padding: 80px 0px;
+  }
+  /* line 362, ../sass/queries.scss */
+  body.maxplay section.team div {
+    display: inline-block;
+    position: relative;
+    width: auto;
+    margin-right: 80px;
+    margin-left: 80px;
+  }
+  /* line 373, ../sass/queries.scss */
+  body.maxplay section.engagement h1, body.maxplay section.engagement h2, body.maxplay section.engagement p, body.maxplay section.engagement p.style-tile, body.maxplay section.inspiration h1, body.maxplay section.inspiration h2, body.maxplay section.inspiration p, body.maxplay section.inspiration p.style-tile, body.maxplay section.explorations h1, body.maxplay section.explorations h2, body.maxplay section.explorations p, body.maxplay section.explorations p.style-tile, body.maxplay section.direction h1, body.maxplay section.direction h2, body.maxplay section.direction p, body.maxplay section.direction p.style-tile, body.maxplay section.final h1, body.maxplay section.final h2, body.maxplay section.final p, body.maxplay section.final p.style-tile, body.maxplay section.sprint h1, body.maxplay section.sprint h2, body.maxplay section.sprint p, body.maxplay section.sprint p.style-tile {
+    width: auto;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  /* line 379, ../sass/queries.scss */
+  body.maxplay section.engagement div.contents, body.maxplay section.inspiration div.contents, body.maxplay section.explorations div.contents, body.maxplay section.direction div.contents, body.maxplay section.final div.contents, body.maxplay section.sprint div.contents {
+    height: auto;
+  }
+  /* line 383, ../sass/queries.scss */
+  body.maxplay section.engagement div.contents p, body.maxplay section.inspiration div.contents p, body.maxplay section.explorations div.contents p, body.maxplay section.direction div.contents p, body.maxplay section.final div.contents p, body.maxplay section.sprint div.contents p {
+    width: auto;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  /* line 389, ../sass/queries.scss */
+  body.maxplay section.engagement img, body.maxplay section.engagement img.align-img-center, body.maxplay section.engagement img.float-img-right, body.maxplay section.engagement img.float-img-left, body.maxplay section.inspiration img, body.maxplay section.inspiration img.align-img-center, body.maxplay section.inspiration img.float-img-right, body.maxplay section.inspiration img.float-img-left, body.maxplay section.explorations img, body.maxplay section.explorations img.align-img-center, body.maxplay section.explorations img.float-img-right, body.maxplay section.explorations img.float-img-left, body.maxplay section.direction img, body.maxplay section.direction img.align-img-center, body.maxplay section.direction img.float-img-right, body.maxplay section.direction img.float-img-left, body.maxplay section.final img, body.maxplay section.final img.align-img-center, body.maxplay section.final img.float-img-right, body.maxplay section.final img.float-img-left, body.maxplay section.sprint img, body.maxplay section.sprint img.align-img-center, body.maxplay section.sprint img.float-img-right, body.maxplay section.sprint img.float-img-left {
+    width: 80%;
+    display: block;
+    margin: 40px auto;
+    float: none;
+    padding: 0;
+  }
+  /* line 397, ../sass/queries.scss */
+  body.maxplay section.engagement div.left-50, body.maxplay section.engagement div.right-50, body.maxplay section.inspiration div.left-50, body.maxplay section.inspiration div.right-50, body.maxplay section.explorations div.left-50, body.maxplay section.explorations div.right-50, body.maxplay section.direction div.left-50, body.maxplay section.direction div.right-50, body.maxplay section.final div.left-50, body.maxplay section.final div.right-50, body.maxplay section.sprint div.left-50, body.maxplay section.sprint div.right-50 {
+    float: none;
+    width: auto;
+  }
+  /* line 403, ../sass/queries.scss */
+  body.maxplay section.final {
+    background-size: cover;
+  }
+}
+@media only screen and (max-width: 480px) {
+  /* line 413, ../sass/queries.scss */
+  header {
+    height: 48px;
+  }
+  /* line 415, ../sass/queries.scss */
+  header a.logo {
+    left: 20px;
+    bottom: 0px;
+  }
+  /* line 420, ../sass/queries.scss */
+  header a.tw {
+    left: 103px;
+    bottom: 3px;
+  }
+  /* line 425, ../sass/queries.scss */
+  header a.dr {
+    left: 130px;
+    bottom: 2px;
+  }
+
+  /* line 431, ../sass/queries.scss */
+  div.issue {
+    right: 10px;
+    top: 10px;
+  }
+
+  /* line 435, ../sass/queries.scss */
+  section.masthead {
+    height: 700px;
+  }
+  /* line 438, ../sass/queries.scss */
+  section.masthead div.stage {
+    -moz-transform: scale(0.6, 0.6);
+    -ms-transform: scale(0.6, 0.6);
+    -webkit-transform: scale(0.6, 0.6);
+    transform: scale(0.6, 0.6);
+    height: 540px;
+  }
+  /* line 444, ../sass/queries.scss */
+  section.masthead h1 {
+    padding-top: 50px;
+  }
+
+  /* line 449, ../sass/queries.scss */
+  section.clients {
+    position: relative;
+  }
+  /* line 452, ../sass/queries.scss */
+  section.clients h1 {
+    padding-top: 90px;
+  }
+  /* line 456, ../sass/queries.scss */
+  section.clients p {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  /* line 466, ../sass/queries.scss */
+  section.cta h1 {
+    padding-top: 50px;
+  }
+
+  /* line 473, ../sass/queries.scss */
+  body.maxplay section.banner h1, body.maxplay section.banner h2, body.maxplay section.banner p {
+    width: auto;
+    padding: 0 20px;
+  }
+  /* line 478, ../sass/queries.scss */
+  body.maxplay section.banner div.stats ul {
+    margin-left: 0;
+  }
+  /* line 481, ../sass/queries.scss */
+  body.maxplay section.banner h1 {
+    padding-top: 120px;
+  }
+  /* line 484, ../sass/queries.scss */
+  body.maxplay section.banner ul {
+    width: 100%;
+    margin: 0 20px;
+  }
+  /* line 489, ../sass/queries.scss */
+  body.maxplay section.banner ul li {
+    background-color: transparent;
+  }
+  /* line 496, ../sass/queries.scss */
+  body.maxplay section.background div.left-50 p, body.maxplay section.background div.left-50 h1, body.maxplay section.background div.left-50 h2 {
+    padding: 0 20px;
+  }
+  /* line 503, ../sass/queries.scss */
+  body.maxplay section.background div.right-50 iframe {
+    width: 320px;
+  }
+  /* line 512, ../sass/queries.scss */
+  body.maxplay section.reachout div.left-30 img {
+    padding: 80px 0 0 0;
+  }
+  /* line 520, ../sass/queries.scss */
+  body.maxplay section.reachout div.right-70 h2, body.maxplay section.reachout div.right-70 p {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  /* line 532, ../sass/queries.scss */
+  body.maxplay section.approach p, body.maxplay section.approach p.guideline {
+    padding: 0 20px;
+  }
+  /* line 536, ../sass/queries.scss */
+  body.maxplay section.approach h2 {
+    padding: 0 20px;
+  }
+  /* line 546, ../sass/queries.scss */
+  body.maxplay section.team div {
+    margin-right: 20px;
+    margin-left: 20px;
+    padding: 20px 0;
+    margin-bottom: 0;
+    padding-bottom: 40px;
+  }
+  /* line 547, ../sass/queries.scss */
+  body.maxplay section.team div img {
+    padding-right: 20px;
+  }
+  /* line 556, ../sass/queries.scss */
+  body.maxplay section.team div p {
+    margin: 0;
+    padding: 0;
+  }
+  /* line 565, ../sass/queries.scss */
+  body.maxplay section.engagement h1, body.maxplay section.engagement h2, body.maxplay section.engagement p, body.maxplay section.engagement p.style-tile, body.maxplay section.inspiration h1, body.maxplay section.inspiration h2, body.maxplay section.inspiration p, body.maxplay section.inspiration p.style-tile, body.maxplay section.explorations h1, body.maxplay section.explorations h2, body.maxplay section.explorations p, body.maxplay section.explorations p.style-tile, body.maxplay section.direction h1, body.maxplay section.direction h2, body.maxplay section.direction p, body.maxplay section.direction p.style-tile, body.maxplay section.final h1, body.maxplay section.final h2, body.maxplay section.final p, body.maxplay section.final p.style-tile, body.maxplay section.sprint h1, body.maxplay section.sprint h2, body.maxplay section.sprint p, body.maxplay section.sprint p.style-tile {
+    width: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  /* line 572, ../sass/queries.scss */
+  body.maxplay section.engagement h2, body.maxplay section.inspiration h2, body.maxplay section.explorations h2, body.maxplay section.direction h2, body.maxplay section.final h2, body.maxplay section.sprint h2 {
+    text-align: left;
+  }
+  /* line 575, ../sass/queries.scss */
+  body.maxplay section.engagement h2.align-center, body.maxplay section.inspiration h2.align-center, body.maxplay section.explorations h2.align-center, body.maxplay section.direction h2.align-center, body.maxplay section.final h2.align-center, body.maxplay section.sprint h2.align-center {
+    padding-top: 30px;
+  }
+  /* line 580, ../sass/queries.scss */
+  body.maxplay section.engagement div.contents, body.maxplay section.inspiration div.contents, body.maxplay section.explorations div.contents, body.maxplay section.direction div.contents, body.maxplay section.final div.contents, body.maxplay section.sprint div.contents {
+    height: auto;
+  }
+  /* line 583, ../sass/queries.scss */
+  body.maxplay section.engagement div.contents h2, body.maxplay section.inspiration div.contents h2, body.maxplay section.explorations div.contents h2, body.maxplay section.direction div.contents h2, body.maxplay section.final div.contents h2, body.maxplay section.sprint div.contents h2 {
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  /* line 590, ../sass/queries.scss */
+  body.maxplay section.engagement div.contents p, body.maxplay section.inspiration div.contents p, body.maxplay section.explorations div.contents p, body.maxplay section.direction div.contents p, body.maxplay section.final div.contents p, body.maxplay section.sprint div.contents p {
+    width: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  /* line 598, ../sass/queries.scss */
+  body.maxplay section.engagement img, body.maxplay section.engagement img.align-img-center, body.maxplay section.engagement img.float-img-right, body.maxplay section.engagement img.float-img-left, body.maxplay section.inspiration img, body.maxplay section.inspiration img.align-img-center, body.maxplay section.inspiration img.float-img-right, body.maxplay section.inspiration img.float-img-left, body.maxplay section.explorations img, body.maxplay section.explorations img.align-img-center, body.maxplay section.explorations img.float-img-right, body.maxplay section.explorations img.float-img-left, body.maxplay section.direction img, body.maxplay section.direction img.align-img-center, body.maxplay section.direction img.float-img-right, body.maxplay section.direction img.float-img-left, body.maxplay section.final img, body.maxplay section.final img.align-img-center, body.maxplay section.final img.float-img-right, body.maxplay section.final img.float-img-left, body.maxplay section.sprint img, body.maxplay section.sprint img.align-img-center, body.maxplay section.sprint img.float-img-right, body.maxplay section.sprint img.float-img-left {
+    width: 80%;
+    display: block;
+    margin: 20px auto;
+    float: none;
+    padding: 0;
+  }
+  /* line 606, ../sass/queries.scss */
+  body.maxplay section.engagement div.left-50, body.maxplay section.engagement div.right-50, body.maxplay section.inspiration div.left-50, body.maxplay section.inspiration div.right-50, body.maxplay section.explorations div.left-50, body.maxplay section.explorations div.right-50, body.maxplay section.direction div.left-50, body.maxplay section.direction div.right-50, body.maxplay section.final div.left-50, body.maxplay section.final div.right-50, body.maxplay section.sprint div.left-50, body.maxplay section.sprint div.right-50 {
+    float: none;
+    width: auto;
+  }
+  /* line 610, ../sass/queries.scss */
+  body.maxplay section.engagement div.left-50 p, body.maxplay section.engagement div.left-50 h2, body.maxplay section.engagement div.left-50 h3, body.maxplay section.engagement div.right-50 p, body.maxplay section.engagement div.right-50 h2, body.maxplay section.engagement div.right-50 h3, body.maxplay section.inspiration div.left-50 p, body.maxplay section.inspiration div.left-50 h2, body.maxplay section.inspiration div.left-50 h3, body.maxplay section.inspiration div.right-50 p, body.maxplay section.inspiration div.right-50 h2, body.maxplay section.inspiration div.right-50 h3, body.maxplay section.explorations div.left-50 p, body.maxplay section.explorations div.left-50 h2, body.maxplay section.explorations div.left-50 h3, body.maxplay section.explorations div.right-50 p, body.maxplay section.explorations div.right-50 h2, body.maxplay section.explorations div.right-50 h3, body.maxplay section.direction div.left-50 p, body.maxplay section.direction div.left-50 h2, body.maxplay section.direction div.left-50 h3, body.maxplay section.direction div.right-50 p, body.maxplay section.direction div.right-50 h2, body.maxplay section.direction div.right-50 h3, body.maxplay section.final div.left-50 p, body.maxplay section.final div.left-50 h2, body.maxplay section.final div.left-50 h3, body.maxplay section.final div.right-50 p, body.maxplay section.final div.right-50 h2, body.maxplay section.final div.right-50 h3, body.maxplay section.sprint div.left-50 p, body.maxplay section.sprint div.left-50 h2, body.maxplay section.sprint div.left-50 h3, body.maxplay section.sprint div.right-50 p, body.maxplay section.sprint div.right-50 h2, body.maxplay section.sprint div.right-50 h3 {
+    padding-left: 20px;
+    padding-right: 20px;
+    width: auto;
+  }
+  /* line 620, ../sass/queries.scss */
+  body.maxplay section.styleguide p, body.maxplay section.styleguide h1, body.maxplay section.styleguide h2 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  /* line 626, ../sass/queries.scss */
+  body.maxplay section.final {
+    background-size: cover;
+  }
+  /* line 629, ../sass/queries.scss */
+  body.maxplay section.final h1 {
+    text-align: center;
+  }
+}

@@ -1,0 +1,2546 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+@font-face {
+  font-family: 'AvenirNextLTProRegular';
+  src: url("../fonts/avenirnextltpro-regular.eot");
+  src: url("../fonts/avenirnextltpro-regular.eot") format("embedded-opentype"), url("../fonts/avenirnextltpro-regular.woff") format("woff"), url("../fonts/avenirnextltpro-regular.ttf") format("truetype"), url("../fonts/avenirnextltpro-regular.svg#AvenirNextLTProRegular") format("svg");
+}
+@font-face {
+  font-family: 'MetaSerifBook';
+  src: url("../fonts/metaserif_book.eot");
+  src: url("../fonts/metaserif_book.eot") format("embedded-opentype"), url("../fonts/metaserif_book.woff") format("woff"), url("../fonts/metaserif_book.ttf") format("truetype"), url("../fonts/metaserif_book.svg#MetaSerifBookBook") format("svg");
+}
+@font-face {
+  font-family: 'GothamBold-Regular';
+  src: url("../fonts/GothamBold_latin+latin-ext_gdi.eot");
+  src: url("../fonts/GothamBold_latin+latin-ext_gdi.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamBold_latin+latin-ext_gdi.woff") format("woff"), url("../fonts/GothamBold_latin+latin-ext_gdi.ttf") format("truetype"), url("../fonts/GothamBold_latin+latin-ext_gdi.svg#GothamBold-Regular") format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-20B1;
+}
+@font-face {
+  font-family: 'TungstenNarrowMedium-Regular';
+  src: url("../fonts/TungstenNarrowMedium_latin+latin-ext_gdi.eot");
+  src: url("../fonts/TungstenNarrowMedium_latin+latin-ext_gdi.eot?#iefix") format("embedded-opentype"), url("../fonts/TungstenNarrowMedium_latin+latin-ext_gdi.woff") format("woff"), url("../fonts/TungstenNarrowMedium_latin+latin-ext_gdi.ttf") format("truetype"), url("../fonts/TungstenNarrowMedium_latin+latin-ext_gdi.svg#TungstenNarrowMedium-Regular") format("svg");
+  font-weight: 350;
+  font-style: normal;
+  font-stretch: condensed;
+  unicode-range: U+0020-20AC;
+}
+/* line 21, ../sass/screen.scss */
+body {
+  font-family: "MetaSerifBook", "Times New Roman", serif;
+  -webkit-font-smoothing: antialiased;
+  background: url(../img/bg-mid.jpg) no-repeat transparent;
+  background-size: cover;
+}
+
+/* line 31, ../sass/screen.scss */
+h1 {
+  font-size: 85px;
+}
+
+/* line 35, ../sass/screen.scss */
+h2 {
+  font-family: "AvenirNextLTProRegular", "Helvetica", "Helvetica Neue", "Arial", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 19px;
+}
+
+/* line 43, ../sass/screen.scss */
+h3 {
+  font-size: 26px;
+  font-family: "MetaSerifBook", "Times New Roman", serif;
+}
+
+/* line 48, ../sass/screen.scss */
+h4 {
+  font-size: 31px;
+  font-family: "MetaSerifBook", "Times New Roman", serif;
+}
+
+/* line 53, ../sass/screen.scss */
+p {
+  font-size: 16px;
+  line-height: 21px;
+  font-family: "MetaSerifBook", "Times New Roman", serif;
+}
+
+/* line 59, ../sass/screen.scss */
+ul, li {
+  margin: 0;
+  padding: 0;
+  font-family: "AvenirNextLTProRegular", "Helvetica", "Helvetica Neue", "Arial", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 12px;
+}
+
+/* line 68, ../sass/screen.scss */
+hr {
+  height: 5px;
+  display: block;
+  width: 30px;
+  background-color: #c11414;
+  border: none;
+  outline: none;
+  margin: 20px auto;
+}
+
+/* line 80, ../sass/screen.scss */
+h1, h2, h3, h4 {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 86, ../sass/screen.scss */
+div.inner {
+  display: block;
+  width: 660px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* line 95, ../sass/screen.scss */
+section.top {
+  height: 440px;
+  display: block;
+  width: 100%;
+  background: url(../img/bg-top.jpg) no-repeat transparent scroll;
+  background-size: cover;
+  background-attachment: fixed;
+}
+/* line 103, ../sass/screen.scss */
+section.top h1 {
+  color: white;
+  line-height: 100px;
+}
+/* line 108, ../sass/screen.scss */
+section.top h2 {
+  color: rgba(255, 255, 255, 0.6);
+  padding-top: 70px;
+}
+/* line 113, ../sass/screen.scss */
+section.top p {
+  margin: 20px auto 20px auto;
+  color: rgba(255, 255, 255, 0.6);
+}
+/* line 118, ../sass/screen.scss */
+section.top p span.highlight {
+  color: white;
+}
+
+/* line 127, ../sass/screen.scss */
+section.who {
+  height: 500px;
+}
+/* line 130, ../sass/screen.scss */
+section.who p {
+  width: 250px;
+  padding-top: 50px;
+  color: rgba(0, 0, 0, 0.6);
+}
+/* line 134, ../sass/screen.scss */
+section.who p span.highlight {
+  color: black;
+}
+/* line 136, ../sass/screen.scss */
+section.who p span.highlight a {
+  text-decoration: underline;
+  color: black;
+}
+/* line 143, ../sass/screen.scss */
+section.who h3 {
+  padding-top: 60px;
+}
+/* line 148, ../sass/screen.scss */
+section.who div.quote {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 170px;
+  width: 250px;
+  height: 250px;
+  background-color: transparent;
+}
+/* line 163, ../sass/screen.scss */
+section.who div.quote span.single-quote {
+  font-family: "MetaSerifBook", "Times New Roman", serif;
+  font-weight: bold;
+  font-size: 44px;
+  color: rgba(0, 0, 0, 0.3);
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  padding-top: 140px;
+  padding-bottom: 0;
+}
+/* line 175, ../sass/screen.scss */
+section.who div.quote p {
+  font-family: "AvenirNextLTProRegular", "Helvetica", "Helvetica Neue", "Arial", sans-serif;
+  padding: 0;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: black;
+}
+/* line 184, ../sass/screen.scss */
+section.who div.quote img {
+  width: 88px;
+  height: 101px;
+  position: absolute;
+  left: 50%;
+  margin-left: -44px;
+  top: 20px;
+}
+
+/* line 197, ../sass/screen.scss */
+section.say-hello {
+  height: 165px;
+  background: url(../img/cta-bg.jpg) no-repeat transparent scroll;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+}
+/* line 204, ../sass/screen.scss */
+section.say-hello h3 {
+  color: white;
+  padding-top: 40px;
+}
+/* line 209, ../sass/screen.scss */
+section.say-hello a {
+  display: block;
+  width: 140px;
+  margin: 20px auto 0 auto;
+  border: 2px solid white;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  padding: 10px;
+  font-size: 12px;
+  letter-spacing: 5px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "AvenirNextLTProRegular", "Helvetica", "Helvetica Neue", "Arial", sans-serif;
+  color: white;
+}
+
+/* line 229, ../sass/screen.scss */
+section.services {
+  height: 500px;
+  position: relative;
+}
+/* line 233, ../sass/screen.scss */
+section.services h3 {
+  position: absolute;
+  left: 0;
+  top: 200px;
+}
+/* line 240, ../sass/screen.scss */
+section.services hr {
+  position: absolute;
+  left: 0;
+  top: 230px;
+}
+/* line 246, ../sass/screen.scss */
+section.services ul {
+  display: inline-block;
+  width: 220px;
+  float: right;
+  margin-top: 140px;
+}
+/* line 253, ../sass/screen.scss */
+section.services ul li {
+  margin: 0 0 20px 0;
+  line-height: 22px;
+}
+
+@media only screen and (max-device-width: 480px) {
+  /* line 268, ../sass/screen.scss */
+  body {
+    width: 100%;
+    position: relative;
+    margin: 0;
+  }
+
+  /* line 275, ../sass/screen.scss */
+  div.inner {
+    width: 100%;
+    padding: 0 0px;
+    margin: 0;
+    position: relative;
+  }
+
+  /* line 283, ../sass/screen.scss */
+  section {
+    height: 100%;
+    padding: 0 0 50px 0;
+  }
+  /* line 289, ../sass/screen.scss */
+  section h1, section h2, section h3, section h4, section p {
+    margin: 0;
+    width: auto;
+    padding: 0;
+  }
+  /* line 294, ../sass/screen.scss */
+  section h1 {
+    font-size: 60px;
+  }
+  /* line 298, ../sass/screen.scss */
+  section p {
+    margin: 0 100px;
+    width: 240px;
+  }
+  /* line 303, ../sass/screen.scss */
+  section.top {
+    height: 600px;
+  }
+  /* line 306, ../sass/screen.scss */
+  section.top p {
+    margin-top: 30px;
+  }
+  /* line 311, ../sass/screen.scss */
+  section.who {
+    height: 600px;
+  }
+  /* line 314, ../sass/screen.scss */
+  section.who p {
+    margin: 100px auto 0 auto;
+    width: 240px;
+  }
+  /* line 319, ../sass/screen.scss */
+  section.who div.quote span.single-quote, section.who .quote-text {
+    display: none;
+  }
+  /* line 323, ../sass/screen.scss */
+  section.who div.quote {
+    left: 50%;
+    margin-left: -125px;
+    top: 120px;
+  }
+  /* line 330, ../sass/screen.scss */
+  section.say-hello {
+    height: 120px;
+    overflow: hidden;
+  }
+  /* line 335, ../sass/screen.scss */
+  section.services {
+    height: 600px;
+    width: 240px;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+  }
+  /* line 342, ../sass/screen.scss */
+  section.services h3 {
+    position: relative;
+    z-index: 100;
+    padding-top: 100px;
+    margin-top: 0;
+    top: auto;
+    left: auto;
+    display: block;
+  }
+  /* line 354, ../sass/screen.scss */
+  section.services hr {
+    margin: 0 auto;
+    position: relative;
+    display: block;
+    top: auto;
+    left: auto;
+    margin-bottom: 40px;
+    margin-top: 20px;
+  }
+  /* line 364, ../sass/screen.scss */
+  section.services ul {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  /* line 370, ../sass/screen.scss */
+  section.services ul li {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
+/* line 385, ../sass/screen.scss */
+body.product-design {
+  background: #f2f2f2;
+}
+/* line 388, ../sass/screen.scss */
+body.product-design div.page {
+  max-width: 1280px;
+  display: block;
+  position: relative;
+  margin: 80px auto;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  overflow: hidden;
+}
+/* line 398, ../sass/screen.scss */
+body.product-design div.button-container {
+  margin: 30px auto 0 auto;
+  position: relative;
+  width: 580px;
+}
+/* line 405, ../sass/screen.scss */
+body.product-design a.say-hello-btn {
+  text-transform: uppercase;
+  font-family: "GothamBold-Regular", "Helvetica", "Helvetica Neue", "Arial", sans-serif;
+  font-size: 10px;
+  text-align: center;
+  width: 180px;
+  height: 40px;
+  text-decoration: none;
+  border: 2px solid black;
+  color: black;
+  display: inline-block;
+  line-height: 40px;
+  cursor: pointer;
+  -webkit-font-smoothing: antialiased;
+}
+/* line 421, ../sass/screen.scss */
+body.product-design header {
+  display: block;
+  width: 100%;
+  height: 60px;
+  position: relative;
+  overflow: hidden;
+  z-index: 20;
+}
+/* line 430, ../sass/screen.scss */
+body.product-design header a {
+  position: relative;
+  z-index: 10;
+}
+/* line 433, ../sass/screen.scss */
+body.product-design header a:hover {
+  cursor: pointer;
+}
+/* line 438, ../sass/screen.scss */
+body.product-design header a.breadcrumb {
+  display: inline-block;
+  width: 164px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: "GothamBold-Regular", "Helvetica", "Helvetica Neue", "Arial", sans-serif;
+  letter-spacing: 2px;
+  font-size: 10px;
+  -webkit-font-smoothing: antialiased;
+  color: white;
+  background-color: #d02929;
+}
+/* line 453, ../sass/screen.scss */
+body.product-design header a.breadcrumb span.back-arrow {
+  width: 0;
+  height: 0;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  display: block;
+  position: absolute;
+  left: 16px;
+  top: 27px;
+  border-right: 4px solid black;
+}
+/* line 466, ../sass/screen.scss */
+body.product-design header a.mail-btn {
+  width: 164px;
+  height: 60px;
+  font-family: "GothamBold-Regular", "Helvetica", "Helvetica Neue", "Arial", sans-serif;
+  letter-spacing: 2px;
+  font-size: 10px;
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  text-align: center;
+}
+/* line 484, ../sass/screen.scss */
+body.product-design aside {
+  width: 1131px;
+  height: 889px;
+  background-color: transparent;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 0;
+  display: block;
+  content: "";
+  overflow: hidden;
+}
+/* line 497, ../sass/screen.scss */
+body.product-design aside div.diamonds {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  right: 0;
+  top: 0;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.1);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  opacity: 0;
+}
+/* line 510, ../sass/screen.scss */
+body.product-design aside div.diamonds div.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  margin-top: -100px;
+  opacity: 0;
+  -moz-transform: scale(1.4, 1.4) rotate(-45deg);
+  -ms-transform: scale(1.4, 1.4) rotate(-45deg);
+  -webkit-transform: scale(1.4, 1.4) rotate(-45deg);
+  transform: scale(1.4, 1.4) rotate(-45deg);
+}
+/* line 520, ../sass/screen.scss */
+body.product-design aside div.diamonds div.image img {
+  width: 200px;
+  height: auto;
+  -moz-transform: scale(1.6, 1.6);
+  -ms-transform: scale(1.6, 1.6);
+  -webkit-transform: scale(1.6, 1.6);
+  transform: scale(1.6, 1.6);
+}
+/* line 531, ../sass/screen.scss */
+body.product-design aside div.diamonds.activate div.image {
+  opacity: 1;
+  -moz-transition-delay: 0.3s;
+  -o-transition-delay: 0.3s;
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+  -moz-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+/* line 541, ../sass/screen.scss */
+body.product-design aside div.diamonds.diamond-1.activate {
+  -moz-transition-delay: 0.05s;
+  -o-transition-delay: 0.05s;
+  -webkit-transition-delay: 0.05s;
+  transition-delay: 0.05s;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  opacity: 1;
+}
+/* line 552, ../sass/screen.scss */
+body.product-design aside div.diamonds.diamond-2 {
+  right: 300px;
+}
+/* line 554, ../sass/screen.scss */
+body.product-design aside div.diamonds.diamond-2.activate {
+  -moz-transition-delay: 0.1s;
+  -o-transition-delay: 0.1s;
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  opacity: 1;
+}
+/* line 564, ../sass/screen.scss */
+body.product-design aside div.diamonds.diamond-3 {
+  right: 150px;
+  top: -150px;
+}
+/* line 568, ../sass/screen.scss */
+body.product-design aside div.diamonds.diamond-3.activate {
+  -moz-transition-delay: 0.15s;
+  -o-transition-delay: 0.15s;
+  -webkit-transition-delay: 0.15s;
+  transition-delay: 0.15s;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  opacity: 1;
+}
+/* line 577, ../sass/screen.scss */
+body.product-design aside div.diamonds.diamond-4 {
+  right: 150px;
+  top: 150px;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+/* line 582, ../sass/screen.scss */
+body.product-design aside div.diamonds.diamond-4 span {
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  display: block;
+  position: absolute;
+  top: 90px;
+  -webkit-transform-origin: center center;
+  left: 48px;
+  width: 120px;
+  height: 20px;
+  background-color: transparent;
+  text-align: center;
+  font-family: "GothamBold-Regular", "Helvetica", "Helvetica Neue", "Arial", sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 10px;
+  opacity: 0;
+}
+/* line 599, ../sass/screen.scss */
+body.product-design aside div.diamonds.diamond-4 span:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid black;
+  position: absolute;
+  top: 0;
+  -moz-transform: translateX(47px) translateY(40px);
+  -ms-transform: translateX(47px) translateY(40px);
+  -webkit-transform: translateX(47px) translateY(40px);
+  transform: translateX(47px) translateY(40px);
+  left: 0;
+}
+/* line 613, ../sass/screen.scss */
+body.product-design aside div.diamonds.diamond-4 span:after {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 3px;
+  background-color: #d48c10;
+  position: absolute;
+  top: 0;
+  -moz-transform: translateX(48px) translateY(-40px);
+  -ms-transform: translateX(48px) translateY(-40px);
+  -webkit-transform: translateX(48px) translateY(-40px);
+  transform: translateX(48px) translateY(-40px);
+  left: 0;
+}
+/* line 626, ../sass/screen.scss */
+body.product-design aside div.diamonds.diamond-4.activate {
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  opacity: 1;
+}
+/* line 633, ../sass/screen.scss */
+body.product-design aside div.diamonds.diamond-4.activate span {
+  opacity: 1;
+  -moz-transition-delay: 0.1s;
+  -o-transition-delay: 0.1s;
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+/* line 640, ../sass/screen.scss */
+body.product-design aside div.diamonds.diamond-4.activate span:after {
+  -moz-transition-delay: 0.3s;
+  -o-transition-delay: 0.3s;
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  -moz-transform: translateX(48px) translateY(-120px);
+  -ms-transform: translateX(48px) translateY(-120px);
+  -webkit-transform: translateX(48px) translateY(-120px);
+  transform: translateX(48px) translateY(-120px);
+}
+/* line 648, ../sass/screen.scss */
+body.product-design aside div.diamonds.diamond-4.activate span:before {
+  -moz-transition-delay: 0.3s;
+  -o-transition-delay: 0.3s;
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  -moz-transform: translateX(48px) translateY(120px);
+  -ms-transform: translateX(48px) translateY(120px);
+  -webkit-transform: translateX(48px) translateY(120px);
+  transform: translateX(48px) translateY(120px);
+}
+/* line 659, ../sass/screen.scss */
+body.product-design aside div.diamonds.diamond-5 {
+  right: 0px;
+  top: 300px;
+}
+/* line 663, ../sass/screen.scss */
+body.product-design aside div.diamonds.diamond-5.activate {
+  -moz-transition-delay: 0.2s;
+  -o-transition-delay: 0.2s;
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  opacity: 1;
+}
+/* line 672, ../sass/screen.scss */
+body.product-design aside div.diamonds.diamond-6 {
+  right: -150px;
+  top: 150px;
+}
+/* line 676, ../sass/screen.scss */
+body.product-design aside div.diamonds.diamond-6.activate {
+  -moz-transition-delay: 0.23s;
+  -o-transition-delay: 0.23s;
+  -webkit-transition-delay: 0.23s;
+  transition-delay: 0.23s;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  opacity: 1;
+}
+/* line 685, ../sass/screen.scss */
+body.product-design aside div.diamonds.diamond-7 {
+  right: -150px;
+  top: 450px;
+}
+/* line 689, ../sass/screen.scss */
+body.product-design aside div.diamonds.diamond-7.activate {
+  -moz-transition-delay: 0.25s;
+  -o-transition-delay: 0.25s;
+  -webkit-transition-delay: 0.25s;
+  transition-delay: 0.25s;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  opacity: 1;
+}
+/* line 698, ../sass/screen.scss */
+body.product-design aside div.diamonds.diamond-8 {
+  right: 450px;
+  top: -150px;
+}
+/* line 702, ../sass/screen.scss */
+body.product-design aside div.diamonds.diamond-8.activate {
+  -moz-transition-delay: 0.28s;
+  -o-transition-delay: 0.28s;
+  -webkit-transition-delay: 0.28s;
+  transition-delay: 0.28s;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  opacity: 1;
+}
+/* line 711, ../sass/screen.scss */
+body.product-design aside div.diamonds.diamond-9 {
+  right: -150px;
+  top: -150px;
+}
+/* line 715, ../sass/screen.scss */
+body.product-design aside div.diamonds.diamond-9.activate {
+  -moz-transition-delay: 0.3s;
+  -o-transition-delay: 0.3s;
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  opacity: 1;
+}
+/* line 729, ../sass/screen.scss */
+body.product-design section.header {
+  width: 100%;
+  height: 1250px;
+  overflow: hidden;
+  position: relative;
+  margin-top: -60px;
+  /**&:after{
+  	width: 1131px;
+  	height: 889px;
+  	background: url(../img/product-design/accent-work.png) no-repeat transparent scroll;
+  	background-size: 1131px 889px;
+  	position: absolute;
+  	right: -380px;
+  	top: -200px;
+  	z-index: 0;
+  	display: block;
+  	content: "";
+  }*/
+}
+/* line 748, ../sass/screen.scss */
+body.product-design section.header:before {
+  height: 250%;
+  width: 600px;
+  -moz-transform: rotate(-45deg) translateX(-100%);
+  -ms-transform: rotate(-45deg) translateX(-100%);
+  -webkit-transform: rotate(-45deg) translateX(-100%);
+  transform: rotate(-45deg) translateX(-100%);
+  background-color: rgba(0, 0, 0, 0.05);
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -650px;
+  left: -800px;
+  z-index: 1;
+}
+/* line 762, ../sass/screen.scss */
+body.product-design section.header.activate:before {
+  -moz-transform: rotate(-45deg) translateX(0);
+  -ms-transform: rotate(-45deg) translateX(0);
+  -webkit-transform: rotate(-45deg) translateX(0);
+  transform: rotate(-45deg) translateX(0);
+  -moz-transition-delay: 0.4s;
+  -o-transition-delay: 0.4s;
+  -webkit-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+  -moz-transition-duration: 2s;
+  -o-transition-duration: 2s;
+  -webkit-transition-duration: 2s;
+  transition-duration: 2s;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+/* line 770, ../sass/screen.scss */
+body.product-design section.header h2, body.product-design section.header h1, body.product-design section.header p, body.product-design section.header span {
+  z-index: 10;
+  text-align: left;
+  margin: 0 0 0 100px;
+  position: relative;
+}
+/* line 777, ../sass/screen.scss */
+body.product-design section.header h1.title {
+  font-size: 96px;
+  margin-top: 10px;
+}
+/* line 782, ../sass/screen.scss */
+body.product-design section.header h2.subtitle {
+  padding-top: 200px;
+  color: #e9a226;
+  font-family: "GothamBold-Regular", "Helvetica", "Helvetica Neue", "Arial", sans-serif;
+  font-size: 16px;
+}
+/* line 789, ../sass/screen.scss */
+body.product-design section.header span.author {
+  margin-left: 260px;
+  font-family: "GothamBold-Regular", "Helvetica", "Helvetica Neue", "Arial", sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 10px;
+  width: 300px;
+}
+/* line 796, ../sass/screen.scss */
+body.product-design section.header span.author span {
+  margin: 0;
+  padding: 0;
+}
+/* line 801, ../sass/screen.scss */
+body.product-design section.header span.author a.name {
+  padding-left: 46px;
+  position: relative;
+  text-decoration: none;
+  color: black;
+}
+/* line 806, ../sass/screen.scss */
+body.product-design section.header span.author a.name:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+/* line 810, ../sass/screen.scss */
+body.product-design section.header span.author a.name:before {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 32px;
+  background: url(../img/product-design/face.png) no-repeat transparent scroll;
+  background-size: 32px 32px;
+  position: absolute;
+  left: 0px;
+  top: -10px;
+}
+/* line 824, ../sass/screen.scss */
+body.product-design section.header p {
+  font-size: 16px;
+  line-height: 28px;
+  width: 550px;
+  margin: 25px 0 500px 100px;
+}
+/* line 832, ../sass/screen.scss */
+body.product-design section.header div.three-points {
+  display: block;
+  position: absolute;
+  left: 200px;
+  top: 650px;
+  width: 312px;
+  height: 269px;
+  background: url(../img/product-design/3-features.png) no-repeat transparent scroll;
+  background-size: 312px 269px;
+  z-index: 10;
+  opacity: 1;
+  -moz-transform-origin: -100px 0 50%;
+  -ms-transform-origin: -100px 0 50%;
+  -webkit-transform-origin: -100px 0 50%;
+  transform-origin: -100px 0 50%;
+}
+/* line 847, ../sass/screen.scss */
+body.product-design section.header div.three-points-content {
+  display: block;
+  position: absolute;
+  left: 200px;
+  top: 650px;
+  width: 313px;
+  height: 294px;
+  z-index: 30;
+}
+/* line 856, ../sass/screen.scss */
+body.product-design section.header div.three-points-content span.icn {
+  display: block;
+  position: absolute;
+  left: 41px;
+  top: 155px;
+  background: url(../img/product-design/sprite.png) no-repeat transparent scroll;
+  width: 30px;
+  background-position: -14px -61px;
+  height: 28px;
+  background-size: 150px 150px;
+}
+/* line 867, ../sass/screen.scss */
+body.product-design section.header div.three-points-content span.icn.pos-1 {
+  background-position: -14px -113px;
+}
+/* line 870, ../sass/screen.scss */
+body.product-design section.header div.three-points-content span.icn.pos-2 {
+  background-position: -14px -61px;
+}
+/* line 874, ../sass/screen.scss */
+body.product-design section.header div.three-points-content span.icn.pos-3 {
+  background-position: -14px -11px;
+}
+/* line 879, ../sass/screen.scss */
+body.product-design section.header div.three-points-content div.dial {
+  width: 119px;
+  height: 119px;
+  background: url(../img/product-design/dial.png) no-repeat transparent scroll;
+  background-size: 119px 119px;
+  display: block;
+  position: absolute;
+  left: 95px;
+  top: 110px;
+  opacity: 1;
+}
+/* line 890, ../sass/screen.scss */
+body.product-design section.header div.three-points-content div.dial:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid white;
+  position: absolute;
+  right: 10px;
+  top: 30px;
+  -moz-transform: rotate(57deg);
+  -ms-transform: rotate(57deg);
+  -webkit-transform: rotate(57deg);
+  transform: rotate(57deg);
+}
+/* line 906, ../sass/screen.scss */
+body.product-design section.header div.three-points-content:after {
+  width: 452px;
+  height: 243px;
+  background: url(../img/product-design/lines.png) no-repeat transparent scroll;
+  background-size: 452px 243px;
+  position: absolute;
+  left: -65px;
+  top: 90px;
+  content: "";
+  display: block;
+  opacity: 0;
+  -moz-transform: scale(0.6, 0.6);
+  -ms-transform: scale(0.6, 0.6);
+  -webkit-transform: scale(0.6, 0.6);
+  transform: scale(0.6, 0.6);
+}
+/* line 920, ../sass/screen.scss */
+body.product-design section.header div.three-points-content.activate:after {
+  -moz-transition-delay: 0.4s;
+  -o-transition-delay: 0.4s;
+  -webkit-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+  -moz-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  opacity: 1;
+  -moz-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  -webkit-transform: scale(1, 1);
+  transform: scale(1, 1);
+}
+/* line 929, ../sass/screen.scss */
+body.product-design section.header div.three-points-content div.zone-1 {
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-left: 201px solid transparent;
+  border-bottom: 112px solid transparent;
+  border-right: 210px solid transparent;
+  -moz-transform: rotate(119deg) translateX(138px) translateY(38px);
+  -ms-transform: rotate(119deg) translateX(138px) translateY(38px);
+  -webkit-transform: rotate(119deg) translateX(138px) translateY(38px);
+  transform: rotate(119deg) translateX(138px) translateY(38px);
+  border-top: 0px solid transparent;
+  cursor: pointer;
+  z-index: 3000;
+}
+/* line 942, ../sass/screen.scss */
+body.product-design section.header div.three-points-content div.zone-2 {
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: 100px;
+  border-right: 201px solid transparent;
+  border-top: 112px solid transparent;
+  border-left: 210px solid transparent;
+  -moz-transform: rotate(422deg) translateX(37px) translateY(136px);
+  -ms-transform: rotate(422deg) translateX(37px) translateY(136px);
+  -webkit-transform: rotate(422deg) translateX(37px) translateY(136px);
+  transform: rotate(422deg) translateX(37px) translateY(136px);
+  border-bottom: 0px solid transparent;
+  cursor: pointer;
+  z-index: 3000;
+}
+/* line 956, ../sass/screen.scss */
+body.product-design section.header div.three-points-content div.zone-3 {
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: 100px;
+  border-right: 201px solid transparent;
+  border-top: 131px solid transparent;
+  border-left: 210px solid transparent;
+  -moz-transform: rotate(180deg) translateX(146px) translateY(-182px);
+  -ms-transform: rotate(180deg) translateX(146px) translateY(-182px);
+  -webkit-transform: rotate(180deg) translateX(146px) translateY(-182px);
+  transform: rotate(180deg) translateX(146px) translateY(-182px);
+  border-bottom: 0px solid transparent;
+  cursor: pointer;
+  z-index: 3000;
+}
+/* line 972, ../sass/screen.scss */
+body.product-design section.header div.three-points-content ul li {
+  position: absolute;
+  font-size: 10px;
+  font-family: "GothamBold-Regular", "Helvetica", "Helvetica Neue", "Arial", sans-serif;
+  letter-spacing: 2px;
+  color: black;
+  text-transform: uppercase;
+  cursor: pointer;
+  z-index: 100;
+}
+/* line 982, ../sass/screen.scss */
+body.product-design section.header div.three-points-content ul li.item-1 {
+  left: -130px;
+  top: 100px;
+  opacity: 0;
+}
+/* line 987, ../sass/screen.scss */
+body.product-design section.header div.three-points-content ul li.item-1.activate {
+  opacity: .5;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+/* line 994, ../sass/screen.scss */
+body.product-design section.header div.three-points-content ul li.item-1.activate:hover {
+  opacity: 1;
+  -moz-transition-duration: 0.1s;
+  -o-transition-duration: 0.1s;
+  -webkit-transition-duration: 0.1s;
+  transition-duration: 0.1s;
+  -moz-transition-delay: 0;
+  -o-transition-delay: 0;
+  -webkit-transition-delay: 0;
+  transition-delay: 0;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+/* line 1007, ../sass/screen.scss */
+body.product-design section.header div.three-points-content ul li.item-2 {
+  left: 400px;
+  top: 80px;
+  opacity: 0;
+}
+/* line 1012, ../sass/screen.scss */
+body.product-design section.header div.three-points-content ul li.item-2.activate {
+  opacity: .5;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+/* line 1019, ../sass/screen.scss */
+body.product-design section.header div.three-points-content ul li.item-2.activate:hover {
+  opacity: 1;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+/* line 1028, ../sass/screen.scss */
+body.product-design section.header div.three-points-content ul li.item-3 {
+  left: 330px;
+  top: 320px;
+  opacity: 0;
+}
+/* line 1033, ../sass/screen.scss */
+body.product-design section.header div.three-points-content ul li.item-3.activate {
+  opacity: .5;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+/* line 1040, ../sass/screen.scss */
+body.product-design section.header div.three-points-content ul li.item-3.activate:hover {
+  opacity: 1;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+/* line 1056, ../sass/screen.scss */
+body.product-design section.product-design-overview {
+  width: 100%;
+  overflow: hidden;
+  height: auto;
+}
+/* line 1061, ../sass/screen.scss */
+body.product-design section.product-design-overview div.title-container {
+  height: 480px;
+  width: 100%;
+  background: url(../img/product-design/overview-bg.jpg) no-repeat transparent;
+  background-size: cover;
+}
+/* line 1068, ../sass/screen.scss */
+body.product-design section.product-design-overview div.title-container h2.subtitle {
+  width: 570px;
+  text-align: left;
+  color: #d02929;
+  font-family: "GothamBold-Regular", "Helvetica", "Helvetica Neue", "Arial", sans-serif;
+  letter-spacing: 3px;
+  font-size: 16px;
+  margin: 0 auto;
+  padding-top: 190px;
+}
+/* line 1080, ../sass/screen.scss */
+body.product-design section.product-design-overview div.title-container h1.title {
+  color: white;
+  margin-top: 10px;
+}
+/* line 1087, ../sass/screen.scss */
+body.product-design section.product-design-overview div.one-ex-container, body.product-design section.product-design-overview div.two-ex-container {
+  width: 100%;
+  min-height: 400px;
+  background-color: white;
+  position: relative;
+}
+/* line 1092, ../sass/screen.scss */
+body.product-design section.product-design-overview div.one-ex-container div.float-left-text, body.product-design section.product-design-overview div.two-ex-container div.float-left-text {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 66%;
+  height: 100%;
+}
+/* line 1099, ../sass/screen.scss */
+body.product-design section.product-design-overview div.one-ex-container div.float-left-text h3, body.product-design section.product-design-overview div.two-ex-container div.float-left-text h3 {
+  position: relative;
+}
+/* line 1101, ../sass/screen.scss */
+body.product-design section.product-design-overview div.one-ex-container div.float-left-text h3:after, body.product-design section.product-design-overview div.two-ex-container div.float-left-text h3:after {
+  display: block;
+  content: "";
+  width: 85px;
+  height: 85px;
+  background-size: 85px 85px;
+  position: absolute;
+  left: -30px;
+  top: -230px;
+}
+/* line 1113, ../sass/screen.scss */
+body.product-design section.product-design-overview div.one-ex-container div.float-left-text h3:before, body.product-design section.product-design-overview div.two-ex-container div.float-left-text h3:before {
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 12px solid black;
+  display: block;
+  content: "";
+  position: absolute;
+  left: -4px;
+  top: -90px;
+}
+/* line 1127, ../sass/screen.scss */
+body.product-design section.product-design-overview div.one-ex-container div.float-left-text .container, body.product-design section.product-design-overview div.two-ex-container div.float-left-text .container {
+  width: 550px;
+  margin: 100px auto 0 auto;
+  background-color: transparent;
+}
+/* line 1136, ../sass/screen.scss */
+body.product-design section.product-design-overview div.one-ex-container div.float-right-text, body.product-design section.product-design-overview div.two-ex-container div.float-right-text {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 66%;
+  height: 100%;
+}
+/* line 1143, ../sass/screen.scss */
+body.product-design section.product-design-overview div.one-ex-container div.float-right-text .container, body.product-design section.product-design-overview div.two-ex-container div.float-right-text .container {
+  width: 550px;
+  margin: 80px auto 0 auto;
+  background-color: transparent;
+}
+/* line 1154, ../sass/screen.scss */
+body.product-design section.product-design-overview div.one-ex-container div.float-right-image, body.product-design section.product-design-overview div.two-ex-container div.float-right-image {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: 34%;
+  background-color: black;
+  background: url(../img/product-design/workify-ex.jpg) no-repeat transparent;
+  background-size: cover;
+  overflow: hidden;
+}
+/* line 1164, ../sass/screen.scss */
+body.product-design section.product-design-overview div.one-ex-container div.float-right-image a, body.product-design section.product-design-overview div.two-ex-container div.float-right-image a {
+  display: block;
+  z-index: 20;
+  border-radius: 100px;
+  height: 43px;
+  width: 202px;
+  background-color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  font-family: "GothamBold-Regular", "Helvetica", "Helvetica Neue", "Arial", sans-serif;
+  letter-spacing: 3px;
+  font-size: 10px;
+  line-height: 43px;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  margin-left: -101px;
+  top: 50%;
+  margin-top: -18px;
+  -moz-transform: translateY(0px) rotateX(90deg);
+  -ms-transform: translateY(0px) rotateX(90deg);
+  -webkit-transform: translateY(0px) rotateX(90deg);
+  transform: translateY(0px) rotateX(90deg);
+  opacity: 0;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+/* line 1189, ../sass/screen.scss */
+body.product-design section.product-design-overview div.one-ex-container div.float-right-image a span, body.product-design section.product-design-overview div.two-ex-container div.float-right-image a span {
+  opacity: .5;
+}
+/* line 1194, ../sass/screen.scss */
+body.product-design section.product-design-overview div.one-ex-container div.float-right-image video, body.product-design section.product-design-overview div.two-ex-container div.float-right-image video {
+  width: 140%;
+  height: auto;
+}
+/* line 1201, ../sass/screen.scss */
+body.product-design section.product-design-overview div.one-ex-container div.float-right-image:hover a, body.product-design section.product-design-overview div.two-ex-container div.float-right-image:hover a {
+  opacity: 1;
+  -moz-transform: translateY(0) rotateX(0);
+  -ms-transform: translateY(0) rotateX(0);
+  -webkit-transform: translateY(0) rotateX(0);
+  transform: translateY(0) rotateX(0);
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+/* line 1213, ../sass/screen.scss */
+body.product-design section.product-design-overview div.one-ex-container div.float-left-image, body.product-design section.product-design-overview div.two-ex-container div.float-left-image {
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 34%;
+  background: url(../img/product-design/homebase-ex.png) no-repeat transparent;
+  background-size: cover;
+  overflow: hidden;
+}
+/* line 1222, ../sass/screen.scss */
+body.product-design section.product-design-overview div.one-ex-container div.float-left-image video, body.product-design section.product-design-overview div.two-ex-container div.float-left-image video {
+  width: 130%;
+  height: auto;
+}
+/* line 1227, ../sass/screen.scss */
+body.product-design section.product-design-overview div.one-ex-container div.float-left-image a, body.product-design section.product-design-overview div.two-ex-container div.float-left-image a {
+  display: block;
+  border-radius: 100px;
+  height: 43px;
+  width: 202px;
+  background-color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  font-family: "GothamBold-Regular", "Helvetica", "Helvetica Neue", "Arial", sans-serif;
+  letter-spacing: 3px;
+  font-size: 10px;
+  line-height: 43px;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  margin-left: -101px;
+  top: 50%;
+  margin-top: -18px;
+  z-index: 20;
+  -moz-transform: translateY(0px) rotateX(90deg);
+  -ms-transform: translateY(0px) rotateX(90deg);
+  -webkit-transform: translateY(0px) rotateX(90deg);
+  transform: translateY(0px) rotateX(90deg);
+  opacity: 0;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+/* line 1253, ../sass/screen.scss */
+body.product-design section.product-design-overview div.one-ex-container div.float-left-image a span, body.product-design section.product-design-overview div.two-ex-container div.float-left-image a span {
+  opacity: .5;
+}
+/* line 1262, ../sass/screen.scss */
+body.product-design section.product-design-overview div.one-ex-container div.float-left-image:hover a, body.product-design section.product-design-overview div.two-ex-container div.float-left-image:hover a {
+  opacity: 1;
+  -moz-transform: translateY(0) rotateX(0);
+  -ms-transform: translateY(0) rotateX(0);
+  -webkit-transform: translateY(0) rotateX(0);
+  transform: translateY(0) rotateX(0);
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+/* line 1275, ../sass/screen.scss */
+body.product-design section.product-design-overview div.one-ex-container h1.title, body.product-design section.product-design-overview div.two-ex-container h1.title {
+  font-size: 96px;
+  margin-top: 10px;
+  text-align: left;
+}
+/* line 1281, ../sass/screen.scss */
+body.product-design section.product-design-overview div.one-ex-container h2.subtitle, body.product-design section.product-design-overview div.two-ex-container h2.subtitle {
+  color: #444444;
+  font-family: "GothamBold-Regular", "Helvetica", "Helvetica Neue", "Arial", sans-serif;
+  font-size: 14px;
+  text-align: left;
+}
+/* line 1289, ../sass/screen.scss */
+body.product-design section.product-design-overview div.one-ex-container h3, body.product-design section.product-design-overview div.two-ex-container h3 {
+  text-align: left;
+  font-family: "TungstenNarrowMedium-Regular", "Helvetica", "Helvetica Neue", sans-serif;
+  font-size: 58px;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  color: #444444;
+}
+/* line 1297, ../sass/screen.scss */
+body.product-design section.product-design-overview div.one-ex-container p, body.product-design section.product-design-overview div.two-ex-container p {
+  font-size: 16px;
+  line-height: 28px;
+  width: 550px;
+  margin-top: 20px;
+}
+/* line 1307, ../sass/screen.scss */
+body.product-design section.product-design-overview div.one-ex-container div.float-left-text div.container {
+  margin-top: 90px;
+}
+/* line 1312, ../sass/screen.scss */
+body.product-design section.product-design-overview div.two-ex-container {
+  background-color: rgba(0, 0, 0, 0.05);
+  position: relative;
+}
+/* line 1315, ../sass/screen.scss */
+body.product-design section.product-design-overview div.two-ex-container h2.subtitle {
+  color: #d02929;
+}
+/* line 1324, ../sass/screen.scss */
+body.product-design section.pull-out-container {
+  background-color: rgba(0, 0, 0, 0.95);
+  height: 518px;
+  width: 100%;
+  position: relative;
+  background: url(../img/product-design/accent-pull-out.png) no-repeat black;
+  background-size: 243px 277px;
+  background-position: center center;
+}
+/* line 1333, ../sass/screen.scss */
+body.product-design section.pull-out-container:before {
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 12px solid rgba(255, 255, 255, 0.95);
+  display: block;
+  content: "";
+  position: absolute;
+  left: 50%;
+  margin-left: -15px;
+  z-index: 3000;
+  top: 0px;
+}
+/* line 1349, ../sass/screen.scss */
+body.product-design section.pull-out-container h4 {
+  font-family: "GothamBold-Regular", "Helvetica", "Helvetica Neue", "Arial", sans-serif;
+  letter-spacing: 3px;
+  font-size: 18px;
+  line-height: 42px;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  width: 650px;
+  position: absolute;
+  left: 50%;
+  margin-left: -325px;
+  top: 50%;
+  margin-top: -50px;
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+}
+/* line 1366, ../sass/screen.scss */
+body.product-design section.pull-out-container h4 span {
+  color: #8f6215;
+}
+/* line 1373, ../sass/screen.scss */
+body.product-design section.four-grid div.three-ex-container, body.product-design section.four-grid div.four-ex-container, body.product-design section.four-grid div.five-ex-container, body.product-design section.four-grid div.six-ex-container {
+  width: 50%;
+  height: 700px;
+  display: inline-block;
+  float: left;
+}
+/* line 1379, ../sass/screen.scss */
+body.product-design section.four-grid div.three-ex-container .title-container, body.product-design section.four-grid div.four-ex-container .title-container, body.product-design section.four-grid div.five-ex-container .title-container, body.product-design section.four-grid div.six-ex-container .title-container {
+  height: 200px;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+}
+/* line 1386, ../sass/screen.scss */
+body.product-design section.four-grid div.three-ex-container h2.title, body.product-design section.four-grid div.four-ex-container h2.title, body.product-design section.four-grid div.five-ex-container h2.title, body.product-design section.four-grid div.six-ex-container h2.title {
+  color: #444444;
+  font-family: "GothamBold-Regular", "Helvetica", "Helvetica Neue", "Arial", sans-serif;
+  font-size: 14px;
+  text-align: left;
+  letter-spacing: 3px;
+  margin-left: 100px;
+  margin-top: 20px;
+}
+/* line 1397, ../sass/screen.scss */
+body.product-design section.four-grid div.three-ex-container h3, body.product-design section.four-grid div.four-ex-container h3, body.product-design section.four-grid div.five-ex-container h3, body.product-design section.four-grid div.six-ex-container h3 {
+  text-align: left;
+  font-family: "TungstenNarrowMedium-Regular", "Helvetica", "Helvetica Neue", sans-serif;
+  font-size: 58px;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  color: #444444;
+  margin-left: 100px;
+  margin-top: 50px;
+}
+/* line 1407, ../sass/screen.scss */
+body.product-design section.four-grid div.three-ex-container p, body.product-design section.four-grid div.four-ex-container p, body.product-design section.four-grid div.five-ex-container p, body.product-design section.four-grid div.six-ex-container p {
+  font-size: 16px;
+  line-height: 28px;
+  width: 400px;
+  margin-top: 40px;
+  margin-left: 100px;
+  position: relative;
+}
+/* line 1415, ../sass/screen.scss */
+body.product-design section.four-grid div.three-ex-container p:before, body.product-design section.four-grid div.four-ex-container p:before, body.product-design section.four-grid div.five-ex-container p:before, body.product-design section.four-grid div.six-ex-container p:before {
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 12px solid white;
+  display: block;
+  content: "";
+  position: absolute;
+  left: 15px;
+  margin-left: -15px;
+  z-index: 3000;
+  top: -52px;
+}
+/* line 1435, ../sass/screen.scss */
+body.product-design section.four-grid div.three-ex-container .title-container {
+  background: url(../img/product-design/03-ex.png) no-repeat transparent scroll;
+  background-size: cover;
+}
+/* line 1439, ../sass/screen.scss */
+body.product-design section.four-grid div.three-ex-container .title-container h3, body.product-design section.four-grid div.three-ex-container .title-container h2 {
+  color: white;
+}
+/* line 1446, ../sass/screen.scss */
+body.product-design section.four-grid div.four-ex-container {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+/* line 1448, ../sass/screen.scss */
+body.product-design section.four-grid div.four-ex-container .title-container {
+  background: url(../img/product-design/04-ex.png) no-repeat transparent;
+  background-size: cover;
+}
+/* line 1452, ../sass/screen.scss */
+body.product-design section.four-grid div.four-ex-container .title-container h3, body.product-design section.four-grid div.four-ex-container .title-container h2 {
+  color: white;
+}
+/* line 1458, ../sass/screen.scss */
+body.product-design section.four-grid div.four-ex-container p:before {
+  border-bottom: 12px solid #f2f2f2;
+}
+/* line 1464, ../sass/screen.scss */
+body.product-design section.four-grid div.five-ex-container {
+  background-color: black;
+}
+/* line 1466, ../sass/screen.scss */
+body.product-design section.four-grid div.five-ex-container .title-container {
+  background: url(../img/product-design/05-ex.png) no-repeat transparent;
+  background-size: cover;
+}
+/* line 1471, ../sass/screen.scss */
+body.product-design section.four-grid div.five-ex-container .title-container h3, body.product-design section.four-grid div.five-ex-container .title-container h2 {
+  color: white;
+}
+/* line 1475, ../sass/screen.scss */
+body.product-design section.four-grid div.five-ex-container .title-container h2 {
+  color: #d4901c;
+}
+/* line 1482, ../sass/screen.scss */
+body.product-design section.four-grid div.five-ex-container div.content p {
+  color: rgba(255, 255, 255, 0.5);
+}
+/* line 1486, ../sass/screen.scss */
+body.product-design section.four-grid div.five-ex-container p:before {
+  border-bottom: 12px solid black;
+}
+/* line 1493, ../sass/screen.scss */
+body.product-design section.four-grid div.six-ex-container {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+/* line 1495, ../sass/screen.scss */
+body.product-design section.four-grid div.six-ex-container .title-container {
+  background: url(../img/product-design/06-ex.png) no-repeat transparent;
+  background-size: cover;
+}
+/* line 1499, ../sass/screen.scss */
+body.product-design section.four-grid div.six-ex-container .title-container h3, body.product-design section.four-grid div.six-ex-container .title-container h2 {
+  color: white;
+}
+/* line 1503, ../sass/screen.scss */
+body.product-design section.four-grid div.six-ex-container .title-container h2 {
+  color: #d4901c;
+}
+/* line 1508, ../sass/screen.scss */
+body.product-design section.four-grid div.six-ex-container div.content p {
+  color: rgba(255, 255, 255, 0.5);
+}
+/* line 1512, ../sass/screen.scss */
+body.product-design section.four-grid div.six-ex-container p:before {
+  border-bottom: 12px solid #181818;
+}
+/* line 1522, ../sass/screen.scss */
+body.product-design section.data-driven {
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.05);
+}
+/* line 1529, ../sass/screen.scss */
+body.product-design section.data-driven h2.title {
+  color: #444444;
+  font-family: "GothamBold-Regular", "Helvetica", "Helvetica Neue", "Arial", sans-serif;
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: 3px;
+}
+/* line 1539, ../sass/screen.scss */
+body.product-design section.data-driven h3 {
+  text-align: center;
+  font-family: "TungstenNarrowMedium-Regular", "Helvetica", "Helvetica Neue", sans-serif;
+  font-size: 58px;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  color: #d02929;
+  margin-top: 100px;
+}
+/* line 1549, ../sass/screen.scss */
+body.product-design section.data-driven p {
+  font-size: 16px;
+  line-height: 28px;
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+/* line 1560, ../sass/screen.scss */
+body.product-design section.digital-ren {
+  height: 900px;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+/* line 1565, ../sass/screen.scss */
+body.product-design section.digital-ren h2.subtitle {
+  padding-top: 140px;
+  color: #e9a226;
+  font-family: "GothamBold-Regular", "Helvetica", "Helvetica Neue", "Arial", sans-serif;
+  font-size: 16px;
+}
+/* line 1572, ../sass/screen.scss */
+body.product-design section.digital-ren p {
+  font-size: 16px;
+  line-height: 28px;
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+/* line 1581, ../sass/screen.scss */
+body.product-design section.digital-ren h1.title {
+  font-size: 96px;
+  margin-top: 10px;
+}
+
+@media only all and (max-width: 1195px) {
+  /* line 1596, ../sass/screen.scss */
+  body.product-design section.four-grid div.three-ex-container, body.product-design section.four-grid div.four-ex-container, body.product-design section.four-grid div.five-ex-container, body.product-design section.four-grid div.six-ex-container {
+    width: 100%;
+    float: none;
+    height: auto;
+    padding-bottom: 40px;
+  }
+  /* line 1602, ../sass/screen.scss */
+  body.product-design section.four-grid div.three-ex-container h1, body.product-design section.four-grid div.three-ex-container h2.title, body.product-design section.four-grid div.three-ex-container h3, body.product-design section.four-grid div.four-ex-container h1, body.product-design section.four-grid div.four-ex-container h2.title, body.product-design section.four-grid div.four-ex-container h3, body.product-design section.four-grid div.five-ex-container h1, body.product-design section.four-grid div.five-ex-container h2.title, body.product-design section.four-grid div.five-ex-container h3, body.product-design section.four-grid div.six-ex-container h1, body.product-design section.four-grid div.six-ex-container h2.title, body.product-design section.four-grid div.six-ex-container h3 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: center;
+  }
+  /* line 1609, ../sass/screen.scss */
+  body.product-design section.four-grid div.three-ex-container p, body.product-design section.four-grid div.four-ex-container p, body.product-design section.four-grid div.five-ex-container p, body.product-design section.four-grid div.six-ex-container p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media only screen and (max-width: 1280px) {
+  /* line 1622, ../sass/screen.scss */
+  body.product-design div.page {
+    margin: 0px auto;
+  }
+}
+@media only all and (max-width: 1068px) {
+  /* line 1629, ../sass/screen.scss */
+  body.product-design section.header:after {
+    -moz-transform: scale(1, 1) translateX(-10px) translateY(-242px);
+    -ms-transform: scale(1, 1) translateX(-10px) translateY(-242px);
+    -webkit-transform: scale(1, 1) translateX(-10px) translateY(-242px);
+    transform: scale(1, 1) translateX(-10px) translateY(-242px);
+  }
+}
+@media only all and (max-width: 932px) {
+  /* line 1648, ../sass/screen.scss */
+  body.product-design section.product-design-overview div.one-ex-container div.float-left-text h3:after, body.product-design section.product-design-overview div.two-ex-container div.float-left-text h3:after {
+    display: none;
+  }
+  /* line 1652, ../sass/screen.scss */
+  body.product-design section.product-design-overview div.one-ex-container div.float-left-text h3:before, body.product-design section.product-design-overview div.two-ex-container div.float-left-text h3:before {
+    display: none;
+  }
+  /* line 1659, ../sass/screen.scss */
+  body.product-design aside {
+    right: -100px;
+    top: -100px;
+  }
+  /* line 1664, ../sass/screen.scss */
+  body.product-design video {
+    display: none;
+  }
+  /* line 1668, ../sass/screen.scss */
+  body.product-design section.header:after {
+    -moz-transform: scale(1, 1) translateX(-10px) translateY(-242px);
+    -ms-transform: scale(1, 1) translateX(-10px) translateY(-242px);
+    -webkit-transform: scale(1, 1) translateX(-10px) translateY(-242px);
+    transform: scale(1, 1) translateX(-10px) translateY(-242px);
+  }
+  /* line 1671, ../sass/screen.scss */
+  body.product-design section.product-design-overview div.one-ex-container, body.product-design section.product-design-overview div.two-ex-container {
+    height: auto;
+  }
+  /* line 1675, ../sass/screen.scss */
+  body.product-design section.product-design-overview div.one-ex-container div.float-left-text, body.product-design section.product-design-overview div.one-ex-container div.float-right-text, body.product-design section.product-design-overview div.one-ex-container div.float-left-image, body.product-design section.product-design-overview div.one-ex-container div.float-right-image, body.product-design section.product-design-overview div.two-ex-container div.float-left-text, body.product-design section.product-design-overview div.two-ex-container div.float-right-text, body.product-design section.product-design-overview div.two-ex-container div.float-left-image, body.product-design section.product-design-overview div.two-ex-container div.float-right-image {
+    width: 100%;
+    position: relative;
+    display: block;
+    height: 400px;
+  }
+  /* line 1683, ../sass/screen.scss */
+  body.product-design section.product-design-overview div.two-ex-container div.float-right-text .container {
+    margin-top: 0;
+    padding-top: 60px;
+  }
+  /* line 1688, ../sass/screen.scss */
+  body.product-design section.product-design-overview div.two-ex-container {
+    height: 800px;
+  }
+  /* line 1692, ../sass/screen.scss */
+  body.product-design section.product-design-overview div.two-ex-container div.float-left-image {
+    position: absolute;
+    bottom: 0;
+  }
+}
+@media only all and (max-width: 736px) {
+  /* line 1703, ../sass/screen.scss */
+  body.product-design h2.subtitle {
+    width: 100%;
+    line-height: 28px;
+  }
+  /* line 1707, ../sass/screen.scss */
+  body.product-design h2.title {
+    line-height: 28px;
+    width: 100%;
+  }
+  /* line 1712, ../sass/screen.scss */
+  body.product-design section.four-grid > div.four-ex-container > div.title-container > h2.title {
+    width: 80%;
+  }
+  /* line 1718, ../sass/screen.scss */
+  body.product-design section.data-driven {
+    background-color: white;
+  }
+  /* line 1722, ../sass/screen.scss */
+  body.product-design aside {
+    display: none;
+  }
+  /* line 1724, ../sass/screen.scss */
+  body.product-design aside div.diamonds {
+    display: none;
+  }
+  /* line 1736, ../sass/screen.scss */
+  body.product-design section.header:after {
+    display: none;
+  }
+  /* line 1741, ../sass/screen.scss */
+  body.product-design header a.mail-btn {
+    position: absolute;
+    right: 0;
+    line-height: 60px;
+  }
+  /* line 1749, ../sass/screen.scss */
+  body.product-design section.header {
+    padding: 40px;
+    width: auto;
+    height: auto;
+  }
+  /* line 1753, ../sass/screen.scss */
+  body.product-design section.header div.three-points {
+    -moz-transform: scale(0.8, 0.8);
+    -ms-transform: scale(0.8, 0.8);
+    -webkit-transform: scale(0.8, 0.8);
+    transform: scale(0.8, 0.8);
+    display: none;
+  }
+  /* line 1758, ../sass/screen.scss */
+  body.product-design section.header div.three-points-content {
+    display: none;
+  }
+  /* line 1762, ../sass/screen.scss */
+  body.product-design section.header p {
+    margin-bottom: 50px;
+    width: 100%;
+    padding: 0px;
+  }
+  /* line 1768, ../sass/screen.scss */
+  body.product-design section.header h1, body.product-design section.header h2, body.product-design section.header h3, body.product-design section.header p, body.product-design section.header span.author {
+    margin-left: 0;
+  }
+  /* line 1772, ../sass/screen.scss */
+  body.product-design section.header h2.subtitle {
+    padding-top: 100px;
+  }
+  /* line 1776, ../sass/screen.scss */
+  body.product-design section.header span.author {
+    display: block;
+    width: 300px;
+    margin-top: 20px;
+  }
+  /* line 1780, ../sass/screen.scss */
+  body.product-design section.header span.author span.name {
+    padding-left: 46px;
+    position: relative;
+  }
+  /* line 1784, ../sass/screen.scss */
+  body.product-design section.header span.author span.name:before {
+    content: "";
+    display: block;
+    width: 32px;
+    height: 32px;
+    background: url(../img/product-design/face.png) no-repeat transparent scroll;
+    background-size: 32px 32px;
+    position: absolute;
+    left: 5px;
+    top: -10px;
+  }
+  /* line 1800, ../sass/screen.scss */
+  body.product-design section.pull-out-container h4 {
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    left: auto;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: relative;
+  }
+  /* line 1813, ../sass/screen.scss */
+  body.product-design section.digital-ren > h1.title {
+    font-size: 40px;
+  }
+  /* line 1817, ../sass/screen.scss */
+  body.product-design section.digital-ren > p {
+    width: auto;
+  }
+  /* line 1822, ../sass/screen.scss */
+  body.product-design section.digital-ren {
+    width: auto;
+    height: auto;
+    padding: 60px;
+  }
+  /* line 1827, ../sass/screen.scss */
+  body.product-design section.digital-ren div.button-container {
+    margin: 30px auto0 auto;
+    position: relative;
+    width: auto;
+  }
+  /* line 1834, ../sass/screen.scss */
+  body.product-design section.digital-ren a.say-hello-btn {
+    text-transform: uppercase;
+    font-family: "GothamBold-Regular", "Helvetica", "Helvetica Neue", "Arial", sans-serif;
+    font-size: 10px;
+    text-align: center;
+    width: 180px;
+    height: 40px;
+    margin: 20px auto;
+    text-decoration: none;
+    border: 2px solid black;
+    color: black;
+    display: block;
+    line-height: 40px;
+    cursor: pointer;
+    -webkit-font-smoothing: antialiased;
+  }
+  /* line 1853, ../sass/screen.scss */
+  body.product-design section.digital-ren h2.subtitle {
+    padding-top: 60px;
+  }
+  /* line 1857, ../sass/screen.scss */
+  body.product-design section.data-driven {
+    width: auto;
+    height: auto;
+    padding: 0 60px 60px 60px;
+  }
+  /* line 1863, ../sass/screen.scss */
+  body.product-design section.data-driven > p {
+    width: auto;
+  }
+  /* line 1875, ../sass/screen.scss */
+  body.product-design section.four-grid div.three-ex-container div.content, body.product-design section.four-grid div.four-ex-container div.content, body.product-design section.four-grid div.five-ex-container div.content, body.product-design section.four-grid div.six-ex-container div.content {
+    width: auto;
+    padding: 60px;
+  }
+  /* line 1879, ../sass/screen.scss */
+  body.product-design section.four-grid div.three-ex-container div.content p, body.product-design section.four-grid div.four-ex-container div.content p, body.product-design section.four-grid div.five-ex-container div.content p, body.product-design section.four-grid div.six-ex-container div.content p {
+    width: auto;
+  }
+  /* line 1888, ../sass/screen.scss */
+  body.product-design section.pull-out-container {
+    padding: 100px 40px;
+    width: auto;
+    height: auto;
+  }
+  /* line 1894, ../sass/screen.scss */
+  body.product-design section.product-design-overview div.title-container h2.subtitle {
+    text-align: center;
+    width: auto;
+    margin: 0;
+    padding-top: 160px;
+  }
+  /* line 1901, ../sass/screen.scss */
+  body.product-design section.product-design-overview div.one-ex-container, body.product-design section.product-design-overview div.two-ex-container {
+    height: auto;
+  }
+  /* line 1905, ../sass/screen.scss */
+  body.product-design section.product-design-overview div.one-ex-container div.float-left-text, body.product-design section.product-design-overview div.one-ex-container div.float-right-text, body.product-design section.product-design-overview div.one-ex-container div.float-left-image, body.product-design section.product-design-overview div.one-ex-container div.float-right-image, body.product-design section.product-design-overview div.two-ex-container div.float-left-text, body.product-design section.product-design-overview div.two-ex-container div.float-right-text, body.product-design section.product-design-overview div.two-ex-container div.float-left-image, body.product-design section.product-design-overview div.two-ex-container div.float-right-image {
+    width: auto;
+    position: relative;
+    display: block;
+    height: 450px;
+    padding: 20px;
+  }
+  /* line 1916, ../sass/screen.scss */
+  body.product-design section.product-design-overview div.two-ex-container div.float-right-text div.container {
+    margin-top: 0;
+    width: auto;
+    padding: 40px;
+  }
+  /* line 1922, ../sass/screen.scss */
+  body.product-design section.product-design-overview div.two-ex-container div.float-right-text div.container h1, body.product-design section.product-design-overview div.two-ex-container div.float-right-text div.container h2, body.product-design section.product-design-overview div.two-ex-container div.float-right-text div.container h3, body.product-design section.product-design-overview div.two-ex-container div.float-right-text div.container p {
+    margin: 0;
+    width: auto;
+  }
+  /* line 1927, ../sass/screen.scss */
+  body.product-design section.product-design-overview div.two-ex-container div.float-right-text div.container h1, body.product-design section.product-design-overview div.two-ex-container div.float-right-text div.container h2 {
+    line-height: 36px;
+  }
+  /* line 1933, ../sass/screen.scss */
+  body.product-design section.product-design-overview div.one-ex-container div.float-left-text div.container {
+    margin-top: 0;
+    height: auto;
+    width: auto;
+    padding: 40px;
+  }
+  /* line 1939, ../sass/screen.scss */
+  body.product-design section.product-design-overview div.one-ex-container div.float-left-text div.container h1, body.product-design section.product-design-overview div.one-ex-container div.float-left-text div.container h2, body.product-design section.product-design-overview div.one-ex-container div.float-left-text div.container h3, body.product-design section.product-design-overview div.one-ex-container div.float-left-text div.container p {
+    margin: 0;
+    width: auto;
+  }
+  /* line 1943, ../sass/screen.scss */
+  body.product-design section.product-design-overview div.one-ex-container div.float-left-text div.container h1, body.product-design section.product-design-overview div.one-ex-container div.float-left-text div.container h2 {
+    line-height: 36px;
+  }
+  /* line 1949, ../sass/screen.scss */
+  body.product-design section.product-design-overview div.two-ex-container {
+    height: auto;
+  }
+  /* line 1953, ../sass/screen.scss */
+  body.product-design section.product-design-overview div.two-ex-container div.float-left-image {
+    position: absolute;
+    bottom: 0;
+  }
+  /* line 1960, ../sass/screen.scss */
+  body.product-design section.product-design-overview div.two-ex-container div.float-left-image {
+    display: none;
+  }
+  /* line 1964, ../sass/screen.scss */
+  body.product-design section.product-design-overview > div.one-ex-container {
+    height: auto;
+  }
+  /* line 1967, ../sass/screen.scss */
+  body.product-design section.product-design-overview > div.one-ex-container div.float-left-text {
+    width: auto;
+    height: auto;
+  }
+  /* line 1977, ../sass/screen.scss */
+  body.product-design section.product-design-overview > div.two-ex-container {
+    height: auto;
+  }
+  /* line 1980, ../sass/screen.scss */
+  body.product-design section.product-design-overview > div.two-ex-container div.float-right-text {
+    width: auto;
+    height: auto;
+    background-color: white;
+  }
+}
+/* line 1997, ../sass/screen.scss */
+body > section.header > h1 {
+  -moz-transform: translateX(-50px);
+  -ms-transform: translateX(-50px);
+  -webkit-transform: translateX(-50px);
+  transform: translateX(-50px);
+  opacity: 0;
+}
+/* line 2001, ../sass/screen.scss */
+body > section.header > h1.activate {
+  opacity: 1;
+  -moz-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-delay: 0.4s;
+  -o-transition-delay: 0.4s;
+  -webkit-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+
+/* line 2014, ../sass/screen.scss */
+body > section.header > h2 {
+  -moz-transform: translateX(-50px);
+  -ms-transform: translateX(-50px);
+  -webkit-transform: translateX(-50px);
+  transform: translateX(-50px);
+  opacity: 0;
+}
+/* line 2018, ../sass/screen.scss */
+body > section.header > h2.activate {
+  -moz-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-delay: 0.2s;
+  -o-transition-delay: 0.2s;
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+  opacity: 1;
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+
+/* line 2032, ../sass/screen.scss */
+body > section.header > span.author {
+  opacity: 0;
+}
+/* line 2036, ../sass/screen.scss */
+body > section.header > span.author.activate {
+  -moz-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-delay: 0.7s;
+  -o-transition-delay: 0.7s;
+  -webkit-transition-delay: 0.7s;
+  transition-delay: 0.7s;
+  opacity: 1;
+}
+
+/* line 2049, ../sass/screen.scss */
+section.header > p:nth-child(4) {
+  -moz-transform: translateY(20px);
+  -ms-transform: translateY(20px);
+  -webkit-transform: translateY(20px);
+  transform: translateY(20px);
+  opacity: 0;
+}
+/* line 2054, ../sass/screen.scss */
+section.header > p:nth-child(4).activate {
+  -moz-transition-duration: 0.6s;
+  -o-transition-duration: 0.6s;
+  -webkit-transition-duration: 0.6s;
+  transition-duration: 0.6s;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-delay: 0.5s;
+  -o-transition-delay: 0.5s;
+  -webkit-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+  opacity: 1;
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+
+/* line 2066, ../sass/screen.scss */
+body.product-design section.header > div.three-points {
+  -moz-transform: scale(0.5, 0.5) rotate(0deg) translateY(0px) translateX(0px);
+  -ms-transform: scale(0.5, 0.5) rotate(0deg) translateY(0px) translateX(0px);
+  -webkit-transform: scale(0.5, 0.5) rotate(0deg) translateY(0px) translateX(0px);
+  transform: scale(0.5, 0.5) rotate(0deg) translateY(0px) translateX(0px);
+  -moz-transform-origin: -200px 0 50%;
+  -ms-transform-origin: -200px 0 50%;
+  -webkit-transform-origin: -200px 0 50%;
+  transform-origin: -200px 0 50%;
+  opacity: 0;
+}
+/* line 2071, ../sass/screen.scss */
+body.product-design section.header > div.three-points.activate {
+  -moz-transition-duration: 0.6s;
+  -o-transition-duration: 0.6s;
+  -webkit-transition-duration: 0.6s;
+  transition-duration: 0.6s;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-delay: 0.6s;
+  -o-transition-delay: 0.6s;
+  -webkit-transition-delay: 0.6s;
+  transition-delay: 0.6s;
+  opacity: 1;
+  -moz-transform: scale(1, 1) rotate(0deg) translateY(0) translateX(0);
+  -ms-transform: scale(1, 1) rotate(0deg) translateY(0) translateX(0);
+  -webkit-transform: scale(1, 1) rotate(0deg) translateY(0) translateX(0);
+  transform: scale(1, 1) rotate(0deg) translateY(0) translateX(0);
+}
+
+/* line 2083, ../sass/screen.scss */
+body.product-design section.header > div.three-points-content div.dial {
+  -moz-transform: scale(0.5, 0.5);
+  -ms-transform: scale(0.5, 0.5);
+  -webkit-transform: scale(0.5, 0.5);
+  transform: scale(0.5, 0.5);
+  opacity: 0;
+}
+/* line 2087, ../sass/screen.scss */
+body.product-design section.header > div.three-points-content div.dial.activate {
+  -moz-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-delay: 0.4s;
+  -o-transition-delay: 0.4s;
+  -webkit-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  opacity: 1;
+  -moz-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  -webkit-transform: scale(1, 1);
+  transform: scale(1, 1);
+  -moz-transform-origin: center center;
+  -ms-transform-origin: center center;
+  -webkit-transform-origin: center center;
+  transform-origin: center center;
+}
+/* line 2097, ../sass/screen.scss */
+body.product-design section.header > div.three-points-content div.dial.activate.position-1 {
+  -moz-transform: rotate(230deg);
+  -ms-transform: rotate(230deg);
+  -webkit-transform: rotate(230deg);
+  transform: rotate(230deg);
+  -moz-transition-delay: 0;
+  -o-transition-delay: 0;
+  -webkit-transition-delay: 0;
+  transition-delay: 0;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  -moz-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transform-origin: center center;
+  -ms-transform-origin: center center;
+  -webkit-transform-origin: center center;
+  transform-origin: center center;
+}
+/* line 2106, ../sass/screen.scss */
+body.product-design section.header > div.three-points-content div.dial.activate.position-2 {
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -moz-transition-delay: 0;
+  -o-transition-delay: 0;
+  -webkit-transition-delay: 0;
+  transition-delay: 0;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  -moz-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transform-origin: center center;
+  -ms-transform-origin: center center;
+  -webkit-transform-origin: center center;
+  transform-origin: center center;
+}
+/* line 2115, ../sass/screen.scss */
+body.product-design section.header > div.three-points-content div.dial.activate.position-3 {
+  -moz-transform: rotate(120deg);
+  -ms-transform: rotate(120deg);
+  -webkit-transform: rotate(120deg);
+  transform: rotate(120deg);
+  -moz-transition-delay: 0;
+  -o-transition-delay: 0;
+  -webkit-transition-delay: 0;
+  transition-delay: 0;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  -moz-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transform-origin: center center;
+  -ms-transform-origin: center center;
+  -webkit-transform-origin: center center;
+  transform-origin: center center;
+}
+
+/* line 2127, ../sass/screen.scss */
+body.product-design section.header:after {
+  opacity: 0;
+}
+
+/* line 2135, ../sass/screen.scss */
+body.product-design section.header.activate:after {
+  -moz-transition-duration: 1.4s;
+  -o-transition-duration: 1.4s;
+  -webkit-transition-duration: 1.4s;
+  transition-duration: 1.4s;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-delay: 0.4s;
+  -o-transition-delay: 0.4s;
+  -webkit-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+  opacity: 1;
+}
+
+/* line 2145, ../sass/screen.scss */
+body.product-design header {
+  -moz-transform: translateY(-60px);
+  -ms-transform: translateY(-60px);
+  -webkit-transform: translateY(-60px);
+  transform: translateY(-60px);
+}
+/* line 2148, ../sass/screen.scss */
+body.product-design header.activate {
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-delay: 0.4s;
+  -o-transition-delay: 0.4s;
+  -webkit-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+  -moz-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  -webkit-transform: translateY(0px);
+  transform: translateY(0px);
+}
+
+/* line 2158, ../sass/screen.scss */
+button.back-to-top {
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  font-family: "GothamBold-Regular", "Helvetica", "Helvetica Neue", "Arial", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(0, 0, 0, 0.9);
+  outline: 0;
+  border: none;
+  cursor: pointer;
+}
+/* line 2172, ../sass/screen.scss */
+button.back-to-top:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: 0;
+  height: 0;
+  margin-top: 23px;
+  margin-left: -4px;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 8px solid rgba(255, 255, 255, 0.1);
+}

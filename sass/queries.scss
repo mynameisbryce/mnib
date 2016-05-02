@@ -1,0 +1,638 @@
+@import "compass/css3/transform";
+@import "compass/css3";
+
+@media only screen and (max-width: 1280px) {
+	div.page{
+		margin: 0px auto;
+	}
+}
+
+@media only screen and (max-width: 1800px){
+	body.maxplay{
+		div.page{
+			max-width: auto;
+			width: 78%;
+			margin: 0;
+		}
+
+		aside{
+			width: 22%;
+		}
+
+		&.maxplay{
+			section.process-tools{
+				ul{
+					li{
+						&.row-last, &:last-child{
+							margin: 0 auto 4px auto;
+						}
+						float: none;
+						display: block;
+						margin: 0 auto 0 auto;
+						width: 100%;
+						
+						margin-bottom: 4px;
+						overflow: hidden;
+
+
+						h2{
+							margin: 100px 0 0 0;
+							padding: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 800px){
+	body{
+		margin-bottom: 60px;
+		&.maxplay{
+			div.page{
+				width: 100%;
+				margin: 0;
+			}
+
+			aside{
+				width: 100%;
+				height: 100%;
+				overflow-x: scroll;
+				top: auto;
+				bottom: 0px;
+				background-color: rgba(0,0,0,1);
+				@include transform(translateY(100%));
+				z-index: 20;
+
+				&.open{
+					@include transform(translateY(0));
+					@include transition-duration(.4s);
+					@include transition-property(all);
+					@include transition-timing-function(ease-in-out);
+				}
+
+				button{
+					display: block;
+				    position: fixed;
+				    height: 60px;
+				    width: 20px;
+				    bottom: 0;
+				    z-index: 100;
+				    border: none;
+				    background-color: blue;
+
+					&.mobile-left{
+						left: 0;
+					}
+
+					&.mobile-right{
+						right: 0;
+					}
+				}
+				ul{
+					padding-top: 20px;
+					display: block;
+					position: relative;
+				}
+
+				ul li{
+					box-shadow: none;
+					border: none;
+					text-align: center;
+					display: block;
+					padding: 15px 20px;
+					font-size: 12px;
+					border-bottom: 1px solid rgba(0,0,0,1);
+
+					&.active-tab{
+						box-shadow: none;
+						@include transition-delay(.3s);
+						@include transition-duration(.4s);
+						@include transition-property(all);
+						@include transition-timing-function(ease-in-out);
+					}
+				}
+			}
+
+			button.mobile-menu{
+				width: 100%;
+				position: fixed;
+				height: 60px;
+				bottom: 0;
+				display: block;
+				left: 0;
+				background-color: blue;
+				border: none;
+				text-indent: -10000px;
+				overflow: hidden;
+				content: "";
+				background: url(../img/maxplay-study/menu-btn@2x.png) no-repeat rgba(0,0,0,1) scroll;
+				background-size: 21px 13px;
+				background-position: center center;
+				box-shadow: none;
+				outline: none;
+				z-index: 20;
+			
+				&.open{
+					border-top: 1px solid rgba(255,255,255,.1);
+					background: url(../img/maxplay-study/close-btn@2x.png) no-repeat rgba(0,0,0,1) scroll;
+					background-size: 16px 16px;
+					background-position: center center;
+					box-shadow: none;
+				}
+
+			}
+		}
+
+	}
+
+	
+	
+
+}
+
+@media only screen and (max-width: 1479px) {
+	
+
+	
+	section.product-design{
+		background-position: top center;
+		background-size: cover;
+	}
+
+	section.testimonial{
+		background-position: top center;
+		div.left,div.right{
+			display: block;
+			width: 100%;
+
+		}
+
+		div.left{
+			div.profile-card{
+				
+				margin-left: -105px;
+
+			}
+
+			div.notes{
+				margin-left: -200px;
+			}
+		}
+
+		div.right{
+			height: auto;
+			background-color: #282727;
+			blockquote{
+				padding: 0px 40px 0 40px;
+				margin-top: 80px;
+
+				&:before{
+					top: 20px;
+				}
+			}
+			
+			a{
+				display: block;
+				position: relative;
+				margin: 30px auto 120px auto;
+				padding: 0;
+				top: auto;
+				left: auto;
+			}
+		}
+
+
+	}
+
+	section.cta{
+		background-position: top center;
+		background-size: cover;
+	}
+
+
+	body.maxplay{
+
+
+
+		section.banner{
+			div.left-50{
+				display: block;
+				float: none;
+				width: 100%;
+
+				img{
+					margin: 0 auto;
+					padding-top: 20px;
+				}
+
+				div.stats ul{
+					margin-left: 0;
+				}
+			}
+
+			h1, h2, p{
+				width: auto;
+				padding: 0 60px;
+				
+			}
+
+			h1{
+				padding-top: 100px;
+			}
+			div.right-50{
+				display: block;
+				float: none;
+				width: 100%;
+
+			}
+		}
+	
+		section.background{
+			height: auto;
+			padding: 80px 0;
+			div.left-50{
+				float: none;
+				width: auto;
+				p{
+					width: auto;
+					padding: 0 80px;
+				}
+			}
+			div.right-50{
+				float: none;
+				width: auto;
+				height: auto;
+				padding: 40px 40px 0 40px;
+				margin: 0;
+				position: relative;
+				iframe{
+					position: relative;
+					display: block;
+					margin: 0 auto;
+					top: 0;
+					right: 0;
+				}
+			}
+		}
+
+		section.reachout{
+			div.left-30{
+				float: none;
+				width: 100%;
+				img{
+					display: block;
+					width: 380px;
+					padding: 80px 0 0 0;;
+					margin: 0 auto;
+				}
+			}
+
+			div.right-70{
+				width: 100%;
+
+				ul li{
+					background-color: transparent;
+					width: 200px;
+					display: block;
+					float: none;
+					padding: 0;
+					margin: 0 auto 20px auto;
+					img{
+						width: 100%;
+						height: auto;
+						display: block;
+						margin: 0 auto;
+						
+					}
+
+					h2{
+						position: relative;
+						display: block;
+						margin-top: 20px;
+					}
+				}
+			}
+		}
+
+		section.approach{
+			img.float-right-img, img.float-left-img{
+				display: block;
+				float: none;
+				margin: 40px auto;
+				padding: 0;
+			}
+
+			p, p.guideline{
+				padding: 0 80px;
+			}
+
+			h2{
+				padding: 0 80px;
+
+			}
+		}
+
+		section.process-tools{
+			ul{
+				li{
+					&.row-last, &:last-child{
+						margin: 0 auto 4px auto;
+					}
+					float: none;
+					display: block;
+					margin: 0 auto 0 auto;
+					width: 100%;
+					
+					margin-bottom: 4px;
+					overflow: hidden;
+
+
+					h2{
+						margin: 100px 0 0 0;
+						padding: 0;
+					}
+				}
+			}
+		}
+
+		section.team{
+			padding: 80px 0px;
+			div{
+				display: inline-block;
+				position: relative;
+				width: auto;
+				margin-right: 80px;
+				margin-left: 80px;
+				
+			}
+		}
+
+		section.engagement, section.inspiration, section.explorations, section.direction, section.final, section.sprint{
+			h1,h2,p, p.style-tile{
+				width: auto;
+				padding-left: 80px;
+				padding-right: 80px;
+			}
+			
+			div.contents{
+				height: auto;
+			}
+
+			div.contents p{
+				width: auto;
+				padding-left: 80px;
+				padding-right: 80px;
+			}
+
+			img, img.align-img-center, img.float-img-right, img.float-img-left{
+				width: 80%;
+				display: block;
+				margin: 40px auto;
+				float: none;
+				padding: 0;
+			}
+
+			div.left-50, div.right-50{
+				float: none;
+				width: auto;
+			}
+		}
+
+		section.final{
+			background-size: cover;
+		}
+	}
+	
+
+}
+
+
+@media only screen and (max-width: 480px) {
+	header{
+		height: 48px;
+		a.logo{
+			left: 20px;
+			bottom: 0px;
+		}
+
+		a.tw{
+			left: 103px;
+			bottom: 3px;
+		}
+		
+		a.dr{
+			left: 130px;
+			bottom: 2px;
+		}
+	}
+		
+	div.issue{
+		right: 10px;
+		top: 10px;
+	}	
+	section.masthead{
+		height: 700px;
+
+		div.stage{
+			@include transform(scale(.6,.6));
+
+			height: 540px;
+		}
+
+		h1{
+			padding-top: 50px;
+		}
+	}
+
+	section.clients{
+		position:relative;
+		
+		h1{
+			padding-top: 90px;
+		}
+
+		p{
+			width: 90%;
+			margin: 0 auto;
+
+		}
+
+	}
+	
+
+	section.cta{
+		h1{
+			padding-top: 50px;
+		}
+	}
+
+	body.maxplay{
+		section.banner{
+			h1, h2, p{
+				width: auto;
+				padding: 0 20px;
+				
+			}
+			div.stats ul{
+				margin-left: 0;
+			}
+			h1{
+				padding-top: 120px;
+			}
+			ul{
+				width: 100%;
+				margin: 0 20px;
+			}
+
+			ul li{background-color: transparent;}
+		}
+		
+		section.background{
+			
+			div.left-50{
+				
+				p, h1, h2{
+					
+					padding: 0 20px;
+				}
+			}
+			div.right-50{
+				
+				iframe{
+					width: 320px;
+				}
+			}
+		}
+
+		section.reachout{
+			div.left-30{
+				
+				img{
+					
+					padding: 80px 0 0 0;;
+					
+				}
+			}
+
+			div.right-70{
+				h2, p{
+					margin-left: 20px;
+					margin-right: 20px;
+				}
+			}
+
+			
+		}
+
+		section.approach{
+			
+
+			p, p.guideline{
+				padding: 0 20px;
+			}
+
+			h2{
+				padding: 0 20px;
+
+			}
+		}
+
+		
+
+		section.team{
+			
+			div{
+				img{
+					padding-right: 20px;
+				}
+				margin-right: 20px;
+				margin-left: 20px;
+				padding: 20px 0;
+				margin-bottom: 0;
+				padding-bottom: 40px;
+
+				p{
+					margin: 0;
+					padding: 0;
+				}
+				
+			}
+		}
+
+		section.engagement, section.inspiration, section.explorations, section.direction, section.final, section.sprint{
+			h1,h2, p, p.style-tile{
+				width: auto;
+				padding-left: 20px;
+				padding-right: 20px;
+				
+			}
+
+			h2{
+				text-align: left;
+
+				&.align-center{
+					padding-top: 30px;
+				}
+			}
+			
+			div.contents{
+				height: auto;
+
+				h2{
+					text-align: left;
+					padding-left: 20px;
+					padding-right: 20px;
+				}
+			}
+
+			div.contents p{
+				width: auto;
+				padding-left: 20px;
+				padding-right: 20px;
+			}
+
+
+
+			img, img.align-img-center, img.float-img-right, img.float-img-left{
+				width: 80%;
+				display: block;
+				margin: 20px auto;
+				float: none;
+				padding: 0;
+			}
+
+			div.left-50, div.right-50{
+				float: none;
+				width: auto;
+
+				p, h2, h3{
+					padding-left: 20px;
+					padding-right: 20px;
+					width: auto;
+
+				}
+			}
+		}
+
+		section.styleguide{
+			p, h1, h2{
+				padding-left: 20px;
+				padding-right: 20px;
+			}
+		}
+
+		section.final{
+			background-size: cover;
+
+			h1{
+				text-align: center;
+			}
+		}
+
+		
+
+	}
+
+}
